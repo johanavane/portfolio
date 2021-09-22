@@ -1,19 +1,26 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
+import "../Navbar.css";
 
 function Navbar() {
   return (
-    <div>
-      <div className="navbar">
-        {/* <Link to="#" className="menu-bars"></Link> */}
-        <button>
-          <FaIcons.FaBars />
-        </button>
+    <header>
+      <div className="container">
+        <div className="wrapper">
+          <div className="inner-header">
+            <div className="navbar">
+              <button>
+                <FaIcons.FaBars />
+              </button>
+            </div>
+            {/* <Hamburger /> */}
+          </div>
+        </div>
       </div>
       <Hamburger />
-    </div>
+    </header>
   );
 }
 

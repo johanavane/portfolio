@@ -25,12 +25,8 @@ export default App;
 {
   // react router dom allows us to have diff pages in app
   // Router = tell react we want router in app
-}
-{
   // Navbar is a component
   // Will be in every single page
-}
-{
   // Switch = we want to render one route at a time
   // Inside switch we define the diff pages we will be having
   // path = destination of a Route

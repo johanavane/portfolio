@@ -1,0 +1,51 @@
+.hamburger-menu {
+  /* display: none; */
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-layer {
+  position: relative;
+  background-color: #02947e;
+  height: 100%;
+  overflow: hidden;
+}
+
+.menu-links {
+  position: relative;
+  top: 250px;
+}
+
+nav {
+  display: block;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  font-size: 6rem;
+  font-weight: 700;
+  height: 135px;
+  position: relative;
+}
+
+/* link text = white, there is no line under links */
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* text turns black when hovering */
+a:hover {
+  color: #000000;
+}
