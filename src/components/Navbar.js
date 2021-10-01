@@ -9,13 +9,10 @@ function Navbar() {
     <header>
       <div className="container">
         <div className="wrapper">
-          <div className="inner-header">
-            <div className="navbar">
-              <button>
-                <FaIcons.FaBars />
-              </button>
-            </div>
-            {/* <Hamburger /> */}
+          <div className="navbar">
+            <button>
+              <FaIcons.FaBars />
+            </button>
           </div>
         </div>
       </div>

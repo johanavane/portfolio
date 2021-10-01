@@ -1,0 +1,51 @@
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.home-container {
+  /* background-image: url("./assets/gradient.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; */
+  /* background: linear-gradient(-45deg, #fba24f, #23d5ab, #e73c7e); */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.home-wrapper {
+  font-size: 6rem;
+  /* font-weight: normal; */
+  /* height: 135px; */
+  position: relative;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+  color: #ffffff;
+  font-family: "Shrikhand";
+}
+
+.home-text {
+  position: relative;
+  top: 300px;
+}
+
+.welcome {
+  font-size: 1.5rem;
+  font-family: "Gill Sans", sans-serif;
+}
