@@ -1,5 +1,5 @@
 .hamburger-menu {
-  display: none;
+  /* display: none; */
   z-index: 9;
   top: 0;
   left: 0;
@@ -12,8 +12,15 @@
 .menu-layer {
   position: relative;
   /* background-color: #02947e; */
-  background-color: #e3f0ff;
+  /* background-color: #e3f0ff; */
+  /* opacity: 0.9; */
+  /* background: transparent; */
   /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  backdrop-filter: blur(1px);
   height: 100%;
   overflow: hidden;
 }
