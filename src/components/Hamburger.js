@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../Hamburger.css";
+import "../styles/Hamburger.css";
 
 function Hamburger() {
   return (
@@ -10,13 +10,19 @@ function Hamburger() {
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <Link to="/" className="home">
+                  Home
+                </Link>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <Link to="/about" className="about">
+                  About
+                </Link>
               </li>
               <li>
-                <Link to="/resume">Experience</Link>
+                <Link to="/resume" className="experience">
+                  Experience
+                </Link>
               </li>
             </ul>
           </nav>

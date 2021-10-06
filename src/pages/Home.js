@@ -1,5 +1,5 @@
 import React from "react";
-import "../Home.css";
+import "../styles/Home.css";
 import "@fontsource/shrikhand";
 
 function home() {
@@ -7,9 +7,13 @@ function home() {
     <div className="home-container">
       <div className="home-wrapper">
         <div className="home-text">
-          <p> JOHANA </p>
-          <p> MARTINEZ </p>
-          <p className="welcome"> Welcome to my site.</p>
+          <p>
+            {"JOHANA"}
+            <br /> {"MARTINEZ"}
+          </p>
+        </div>
+        <div className="welcome">
+          <p> Welcome to my site.</p>
         </div>
       </div>
     </div>

@@ -1,8 +1,9 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
+import { FcDatabase } from "react-icons/fc";
 import { Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
-import "../Navbar.css";
+import "../styles/Navbar.css";
 
 function Navbar() {
   return (
@@ -11,7 +12,8 @@ function Navbar() {
         <div className="wrapper">
           <div className="navbar">
             <button>
-              <FaIcons.FaBars />
+              {/* <FaIcons.FaBars /> */}
+              <FcDatabase />
             </button>
           </div>
         </div>
