@@ -1,0 +1,27 @@
+/* style sheet for navbar
+chnages made here will only affect navbar at top of page
+*/
+
+.container {
+  width: 1280px;
+  min-width: 1280px;
+  /* margin: 0 auto; */
+}
+
+.wrapper {
+  padding: 0 48px;
+  position: relative;
+  z-index: 10;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 3rem;
+  mix-blend-mode: difference;
+}

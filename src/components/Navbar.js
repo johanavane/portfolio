@@ -1,15 +1,25 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
+import { FcDatabase } from "react-icons/fc";
 import { Link } from "react-router-dom";
+import Hamburger from "./Hamburger";
+import "../styles/Navbar.css";
 
 function Navbar() {
   return (
-    <div>
-      <div className="navbar">
-        <Link to="#" className="menu-bars"></Link>
-        <FaIcons.FaBars />
+    <header>
+      <div className="container">
+        <div className="wrapper">
+          <div className="navbar">
+            <button>
+              {/* <FaIcons.FaBars /> */}
+              <FcDatabase />
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+      <Hamburger />
+    </header>
   );
 }
 
