@@ -1,10 +1,26 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Hamburger.css";
 
-function Hamburger() {
+function Hamburger({ state }) {
+  let menu = useRef(null);
+
+  useEffect(() => {
+    // If the menu is open and we click the menu button to close it.
+    if (state.clicked === false) {
+      // close our menu
+      menu.style.display = "none";
+    } else if (
+      state.clicked === true ||
+      (state.clicked === true && state.initial === null)
+    ) {
+      //open menu
+      menu.style.display = "block";
+    }
+  });
+
   return (
-    <div className="hamburger-menu">
+    <div ref={(el) => (menu = el)} className="hamburger-menu">
       <div className="menu-layer">
         <div className="menu-links">
           <nav>
