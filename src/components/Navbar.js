@@ -61,7 +61,7 @@ function Navbar({ history }) {
             <button disabled={disabled} onClick={handleMenu}>
               {/* <FaIcons.FaBars /> */}
               {/* <FcDatabase /> */}
-              Menu
+              {state.menuName}
             </button>
           </div>
         </div>
