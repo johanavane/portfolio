@@ -8,8 +8,8 @@ function home() {
       <div className="home-wrapper">
         <div className="home-text">
           <p>
-            {"JOHANA"}
-            <br /> {"MARTINEZ"}
+            {"johana"}
+            <br /> {"martinez"}
           </p>
         </div>
         <div className="welcome">

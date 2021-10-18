@@ -56,15 +56,11 @@ function Navbar({ history }) {
   return (
     <header>
       <div className="container">
-        <div className="wrapper">
-          <div className="navbar">
-            <button disabled={disabled} onClick={handleMenu}>
-              {/* <FaIcons.FaBars /> */}
-              {/* <FcDatabase /> */}
-              {state.menuName}
-            </button>
-          </div>
-        </div>
+        <button disabled={disabled} onClick={handleMenu}>
+          {/* <FaIcons.FaBars /> */}
+          {/* <FcDatabase /> */}
+          {state.menuName}
+        </button>
       </div>
       <Hamburger state={state} />
     </header>

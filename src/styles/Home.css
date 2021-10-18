@@ -14,9 +14,11 @@
   /* background-image: url("./assets/gradient.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%; */
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  animation: gradient 15s ease infinite; */
+  /* background: linear-gradient(#e4b2e0, #fdc9ff, #ffffff); */
+  background-color: white;
   top: 0;
   left: 0;
   right: 0;
@@ -26,17 +28,26 @@
 }
 
 .home-wrapper {
-  height: 100%;
-  font-size: 6rem;
-  text-align: center;
+  /* height: 100%; */
+  /* text-align: center; */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 p {
-  color: #ffffff;
+  text-align: center;
+  font-size: 6rem;
+  /* color: #ffffff; */
+  color: #7cb5e8;
   /* font-family: "Shrikhand"; */
-  font-family: "Courier New", monospace;
+  /* font-family: "Courier New", monospace; */
+  /* font-family: "roc-grotesk"; */
+  /* font-family: "Haas Grot Text R Web"; */
+  font-family: "Moret-Book";
   position: relative;
-  top: 200px;
+  /* top: 200px; */
 }
 
 .home-text p {

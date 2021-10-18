@@ -41,8 +41,10 @@ function Hamburger({ state }) {
       gsap.from(revealMenu, {
         duration: 0.8,
         height: 0,
-        transformOrigin: "right top",
-        skewY: 2,
+        // following makes page come in sideways
+        // instead of top to bottom
+        // transformOrigin: "right top",
+        // skewY: 2,
         ease: "power3.inOut",
         stagger: {
           amount: 0.1,
@@ -55,22 +57,17 @@ function Hamburger({ state }) {
     <div ref={(el) => (menu = el)} className="hamburger-menu">
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menu-links">
+          {/* nav tag used for navigation links */}
           <nav>
             <ul>
               <li>
-                <Link to="/" className="home">
-                  Home
-                </Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/about" className="about">
-                  About
-                </Link>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/resume" className="experience">
-                  Experience
-                </Link>
+                <Link to="/resume">Experience</Link>
               </li>
             </ul>
           </nav>

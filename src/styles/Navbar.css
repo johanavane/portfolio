@@ -2,27 +2,27 @@
 chnages made here will only affect navbar at top of page
 */
 
-.container {
+/* .container {
   width: 1280px;
   min-width: 1280px;
-  /* margin: 0 auto; */
-}
+} */
 
-.wrapper {
-  padding: 0 48px;
+.container {
+  padding: 0 80px;
   position: relative;
   z-index: 10;
   height: 100px;
   display: flex;
-  align-items: center;
 }
 
+/* for menu button */
 button {
   border: none;
   background: none;
   outline: none;
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 19px;
   mix-blend-mode: difference;
-  color: #23d5ab;
+  /* color: #23d5ab; */
+  color: #322a23;
 }

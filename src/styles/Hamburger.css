@@ -11,38 +11,34 @@
 
 .menu-layer {
   position: relative;
-  /* background-color: #e3f0ff; */
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-color: #c3deaa;
   height: 100%;
   overflow: hidden;
 }
 
+/*  vertical and horizontal centering of links */
 .menu-links {
-  /*  position and top:
-  add spacing to the top of page and links */
   position: relative;
-  top: 250px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* text align: moves links to center of page
+if not here then links positioned at left side of page */
 nav {
-  display: block;
-  /* text align: moves links to center of page
-  if not here then links positioned at left side of page */
+  /* commenting out bc i dont know what dispaly block does */
+  /* display: block; */
   text-align: center;
 }
 
-ul {
-  /* not sure what these two do
-  when i remove them the lonks move slightky to the left and */
-  margin: 0;
-  padding: 0;
-}
-
+/* stylyng of the 3 links */
 li {
   list-style: none;
-  font-size: 6rem;
-  font-weight: 700;
-  height: 135px;
+  font-size: 8rem;
+  font-weight: 400;
+  height: 160px;
   position: relative;
 }
 
@@ -52,15 +48,19 @@ a {
   text-decoration: none;
 }
 
-/* text turns black when hovering */
+/* text turns pink when hovering */
+a:hover {
+  color: thistle;
+}
 
+/* --------------------------------------------------- 
 .home:hover {
   color: #fba24f;
 }
-
 .about:hover {
   color: #5b59f3;
 }
 .experience:hover {
   color: #ff7e5b;
-}
+} 
+------------------------------------------------------ */
