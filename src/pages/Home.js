@@ -7,14 +7,11 @@ function home() {
     <div className="home-container">
       <div className="home-wrapper">
         <div className="home-text">
-          <p>
-            {"johana"}
-            <br /> {"martinez"}
-          </p>
+          <a>JOHANA.</a>
         </div>
-        <div className="welcome">
+        {/* <div className="welcome">
           <p> Welcome to my site.</p>
-        </div>
+        </div> */}
       </div>
     </div>
   );

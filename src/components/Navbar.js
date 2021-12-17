@@ -10,7 +10,7 @@ function Navbar({ history }) {
   const [state, setState] = useState({
     initial: false,
     clicked: null,
-    menuName: "Menu",
+    menuName: "MENU",
   });
 
   // State of our button
@@ -20,7 +20,7 @@ function Navbar({ history }) {
   useEffect(() => {
     // Listen for page chnages
     history.listen(() => {
-      setState({ clicked: false, menuName: "Menu" });
+      setState({ clicked: false, menuName: "MENU" });
     });
   });
 
@@ -30,17 +30,17 @@ function Navbar({ history }) {
       setState({
         initial: null,
         clicked: true,
-        menuName: "Close",
+        menuName: "CLOSE",
       });
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: "Menu",
+        menuName: "MENU",
       });
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: "Close",
+        menuName: "CLOSE",
       });
     }
   };

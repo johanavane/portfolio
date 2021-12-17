@@ -1,0 +1,46 @@
+.grid-container {
+  /* changing this from 100vh to 100% changes the height of the box */
+  /* position: relative; */
+  height: 98vh;
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 90px;
+}
+
+.grid-one {
+  background: #e4ddd3;
+  grid-column: 1;
+  grid-row: 1/2;
+}
+
+.grid-two {
+  margin: auto;
+  background: white;
+  grid-column: 2;
+  grid-row: 1/2;
+}
+
+.icon-links a:link {
+  color: black;
+  padding-left: 1em;
+}
+
+.icon-links {
+  text-align: center;
+}
+
+.location,
+.icon-links,
+.intro p {
+  font-size: 17px;
+  line-height: 29px;
+  color: black;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+/* body {
+  font-size: 17px;
+  line-height: 29px;
+} */

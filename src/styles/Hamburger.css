@@ -43,13 +43,13 @@ li {
 }
 
 /* link text = white, there is no line under links */
-a {
+.menu-links a {
   color: #fff;
   text-decoration: none;
 }
 
 /* text turns pink when hovering */
-a:hover {
+.menu-links a:hover {
   color: thistle;
 }
 

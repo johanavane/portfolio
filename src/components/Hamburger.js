@@ -67,7 +67,7 @@ function Hamburger({ state }) {
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <Link to="/resume">Experience</Link>
+                <Link to="/resume">Work</Link>
               </li>
             </ul>
           </nav>
