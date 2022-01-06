@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import "media-queries";
 
 .home-container {
   background-color: WHITE;
@@ -40,4 +41,48 @@
 /* .welcome p {
   font-size: 305px;
   font-family: "Gill Sans", sans-serif;
+} */
+
+@media screen and (max-width: 601px) {
+  div.home-text a {
+    font-size: 100px;
+  }
+  div.home-wrapper {
+    margin-bottom: -1.5em;
+  }
+  div.home-container {
+    background-color: pink;
+  }
+}
+/* resizing for iphone 6/7/8 Plus */
+@media screen and (max-width: 414px) {
+  div.home-text a {
+    font-size: 81.5px;
+  }
+  div.home-wrapper {
+    margin-bottom: -1.5em;
+  }
+  div.home-container {
+    background-color: pink;
+  }
+}
+/* @media screen and (min-width: 601px) {
+  .home-text a {
+    font-size: 283px;
+  }
+}
+
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+/* @media screen and (min-width: 414px) and (max-width: 900px) {
+  div.home-text a {
+    font-size: min(
+      max(283px, calc(17.6875rem + ((1vw - 4.14px) * -25.5725))),
+      82px
+    );
+  }
+  div.home-wrapper {
+    margin-bottom: -1.5em;
+    min-height: 0vw;
+  }
 } */
