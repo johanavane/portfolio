@@ -9,10 +9,10 @@ function Resume() {
         <div class="resume-links">
           <nav>
             <li>
-              <Link to="#">Dark Mode</Link>
+              <Link to="/DarkMode">Dark Mode</Link>
             </li>
             <li>
-              <Link to="#">Boba Tracker</Link>
+              <Link to="/Boba">Boba Tracker</Link>
             </li>
           </nav>
         </div>

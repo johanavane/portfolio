@@ -20,7 +20,7 @@ function Navbar({ history }) {
   useEffect(() => {
     // Listen for page chnages
     history.listen(() => {
-      setState({ clicked: false, menuName: "MENU" });
+      setState({ clicked: false, menuName: "Menu" });
     });
   });
 
@@ -30,17 +30,17 @@ function Navbar({ history }) {
       setState({
         initial: null,
         clicked: true,
-        menuName: "CLOSE",
+        menuName: "Exit",
       });
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: "MENU",
+        menuName: "Menu",
       });
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: "CLOSE",
+        menuName: "Exit",
       });
     }
   };

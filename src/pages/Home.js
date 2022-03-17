@@ -31,11 +31,11 @@ class Home extends React.Component {
       <div className="home-container">
         <div className="home-wrapper">
           <div className="home-text">
-            <a>JOHANA.</a>
+            <a>Hi, I'm Johana.</a>
           </div>
-          {/* <div className="welcome">
-            <p> Welcome to my site.</p>
-          </div> */}
+          <div className="welcome">
+            <p> Welcome to my corner of the internet.</p>
+          </div>
         </div>
       </div>
     );

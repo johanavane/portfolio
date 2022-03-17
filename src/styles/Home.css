@@ -1,63 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import "media-queries";
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .home-container {
-  background-color: WHITE;
+  /* background-color: WHITE; */
+  /* background: linear-gradient(-45deg, #aed7c5, #9bb649, #f9db5a, #a4cdec); */
+  background: linear-gradient(-45deg, #9bb649, #414d6e, #42682f, #f9db5a);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
   top: 0;
   left: 0;
   right: 0;
   position: fixed;
   height: 100%;
-  /* width: 100%; */
+  width: 100%;
 }
 
-/* .home-wrapper {
+.home-wrapper {
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-} */
+}
 
-/* p {
-  color: #7cb5e8;
-  position: relative;
-} */
-
-.home-wrapper {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: -5em;
-  /* left: 0; */
+.home-text,
+.welcome {
+  text-align: center;
 }
 
 .home-text a {
   /* position: relative; */
-  font-size: 283px;
+  /* font-size: 283px; */
   /* top: 200px; */
   /* font-weight: 600; */
-  font-family: "Alfa Slab One", cursive;
+  font-size: 90px;
+  font-weight: bold;
+  /* font-family: "Alfa Slab One", cursive; */
+  color: white;
 }
 
-/* .welcome p {
-  font-size: 305px;
+.welcome p {
+  font-size: 25px;
   font-family: "Gill Sans", sans-serif;
-} */
+}
 
 @media screen and (max-width: 601px) {
   div.home-text a {
-    font-size: 100px;
+    font-size: 77px;
   }
   div.home-wrapper {
     margin-bottom: -1.5em;
   }
   div.home-container {
-    background-color: pink;
+    background-color: goldenrod;
   }
 }
 /* resizing for iphone 6/7/8 Plus */
 @media screen and (max-width: 414px) {
   div.home-text a {
-    font-size: 81.5px;
+    font-size: 64px;
   }
   div.home-wrapper {
     margin-bottom: -1.5em;
@@ -66,12 +78,6 @@
     background-color: pink;
   }
 }
-/* @media screen and (min-width: 601px) {
-  .home-text a {
-    font-size: 283px;
-  }
-}
-
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
 /* @media screen and (min-width: 414px) and (max-width: 900px) {

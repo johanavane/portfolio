@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Yeseva+One&display=swap");
+
 .hamburger-menu {
   display: none;
   z-index: 9;
@@ -12,7 +14,9 @@
 .menu-layer {
   position: relative;
   /* background-color: #000000; */
-  background-color: #c3deaa;
+  /* background-color: #9bb649; */
+  /* background-color: #f8fbe8; */
+  background-color: #42682f;
   height: 100%;
   overflow: hidden;
 }
@@ -34,23 +38,23 @@ nav {
 }
 
 /* stylyng of the 3 links */
-li {
+.menu-links li {
   list-style: none;
   font-size: 8rem;
-  font-weight: 400;
   height: 160px;
   position: relative;
 }
 
 /* link text = white, there is no line under links */
 .menu-links a {
-  color: #fff;
+  color: white;
   text-decoration: none;
+  font-family: "Yeseva One", cursive;
 }
 
 /* text turns pink when hovering */
 .menu-links a:hover {
-  color: thistle;
+  color: white;
 }
 
 /* --------------------------------------------------- 

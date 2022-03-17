@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
+import DarkMode from "./pages/DarkMode";
+import Boba from "./pages/Boba";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -22,7 +24,7 @@ class App extends React.Component {
   }
 
   fakeRequest = () => {
-    return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+    return new Promise((resolve) => setTimeout(() => resolve(), 4500));
   };
 
   render() {
@@ -38,6 +40,8 @@ class App extends React.Component {
             <Route path="/" exact component={Home} />
             <Route path="/About" exact component={About} />
             <Route path="/Resume" exact component={Resume} />
+            <Route path="/DarkMode" exact component={DarkMode} />
+            <Route path="/Boba" exact component={Boba} />
           </Switch>
         </Router>
       </>

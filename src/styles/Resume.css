@@ -11,7 +11,7 @@
 .resume-layer {
   position: relative;
   /* background-color: #000000; */
-  background-color: #c3deaa;
+  background-color: #414d6e;
   height: 100%;
   overflow: hidden;
 }
@@ -24,17 +24,18 @@
 }
 
 .resume-container a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .resume-container a:hover {
-  font-size: 115%;
+  /* font-size: 115%; */
+  color: #e4f5c1;
 }
 
 .resume-container li {
   list-style: none;
-  font-size: 138px;
+  font-size: 112px;
   font-weight: 400;
   line-height: 116px;
   /* height: 160px; */

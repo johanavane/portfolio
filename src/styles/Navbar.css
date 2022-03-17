@@ -7,6 +7,8 @@ chnages made here will only affect navbar at top of page
   min-width: 1280px;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap");
+
 .container {
   padding: 0 60px;
   position: relative;
@@ -22,8 +24,9 @@ button {
   background: none;
   outline: none;
   cursor: pointer;
-  font-size: 19px;
+  font-size: 20px;
+  font-family: "Gayathri", sans-serif;
   /* mix-blend-mode: difference; */
   /* color: #23d5ab; */
-  color: #322a23;
+  color: black;
 }

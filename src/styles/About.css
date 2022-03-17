@@ -1,28 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;700&display=swap");
 .grid-container {
   /* changing this from 100vh to 100% changes the height of the box */
   /* position: relative; */
   height: 98vh;
   display: grid;
-  grid-template-columns: 700px 1fr;
+  grid-template-columns: 600px 1fr;
   grid-template-rows: 1fr;
   column-gap: 90px;
+  margin-top: 10px;
+}
+.grid-container a {
+  color: black;
 }
 
-.grid-one {
-  background: #e4ddd3;
+.grid-photo {
+  /* background: #e4ddd3; */
   grid-column: 1;
   grid-row: 1/2;
+  /* text-align: center; */
+}
+
+.portrait {
+  /* margin: 0; */
+  /* text-align: right; */
+  position: fixed;
+  top: 50%;
+  transform: translate(20%, -50%);
+  margin: 0px 900px 0px 0px;
+  /* -webkit-transform: translate(-25%, -50%); */
+  /* transform: translate(15%, -50%); */
+}
+
+.grid-photo img {
+  height: 700px;
+  /* margin: 0 auto; */
+  /* text-align: center; */
+}
+
+.upper-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 2s;
+  opacity: 0;
+}
+
+.upper-image:hover {
+  opacity: 1;
 }
 
 .grid-two {
   margin: auto;
-  background: white;
+
+  /* background: white; */
   grid-column: 2;
   grid-row: 1/2;
 }
 
-.icon-links a:link {
-  color: black;
+.icon-links a {
+  color: #7fa667;
   padding-left: 1em;
 }
 
@@ -30,14 +66,26 @@
   text-align: center;
 }
 
-.location,
 .icon-links,
 .intro p {
-  font-size: 17px;
+  font-size: 16px;
   line-height: 29px;
   color: black;
   letter-spacing: 0.04em;
   text-align: center;
+  font-family: "Gayathri", sans-serif;
+  font-weight: 400;
+}
+.location p {
+  font-size: 16px;
+  line-height: 29px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #7fa667;
+  font-family: "Gayathri", sans-serif;
+}
+.location a {
+  color: #7fa667;
 }
 
 /* body {
