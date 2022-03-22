@@ -16,7 +16,7 @@
 .home-container {
   /* background-color: WHITE; */
   /* background: linear-gradient(-45deg, #aed7c5, #9bb649, #f9db5a, #a4cdec); */
-  background: linear-gradient(-45deg, #9bb649, #414d6e, #42682f, #f9db5a);
+  background: linear-gradient(-45deg, #f9db5a, #9bb649, #42682f, #f9db5a);
   background-size: 400% 400%;
   animation: gradient 20s ease infinite;
   top: 0;

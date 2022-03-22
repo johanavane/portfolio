@@ -17,7 +17,6 @@
   /* background: #e4ddd3; */
   grid-column: 1;
   grid-row: 1/2;
-  /* text-align: center; */
 }
 
 .portrait {
@@ -32,9 +31,7 @@
 }
 
 .grid-photo img {
-  height: 700px;
-  /* margin: 0 auto; */
-  /* text-align: center; */
+  width: 500px;
 }
 
 .upper-image {
@@ -51,8 +48,6 @@
 
 .grid-two {
   margin: auto;
-
-  /* background: white; */
   grid-column: 2;
   grid-row: 1/2;
 }
@@ -60,6 +55,7 @@
 .icon-links a {
   color: #7fa667;
   padding-left: 1em;
+  font-size: large;
 }
 
 .icon-links {

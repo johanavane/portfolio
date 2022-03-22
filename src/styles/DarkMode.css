@@ -17,10 +17,10 @@
 
 /* Dark Mode title */
 .one {
-  margin: 200px 500px 0 0;
+  margin: 200px 0 0 0;
 }
 .two {
-  margin: 100px -500px 200px 0;
+  margin: 100px 0 200px 0;
 }
 .title p {
   color: #42682f;

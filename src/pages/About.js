@@ -34,7 +34,7 @@ class About extends React.Component {
         <div class="grid-photo">
           <div class="portrait">
             <img src="portrait.jpeg" />
-            <img src="hiking.jpg" class="upper-image" />
+            {/* <img src="hiking.jpg" class="upper-image" /> */}
 
             {/* <img
               src={this.state.img}
@@ -61,23 +61,23 @@ class About extends React.Component {
           </div>
           <div className="intro">
             <p>
-              Hello! Thank you for stopping by my page to learn about me. I am
-              Johana, a first generation college graduate from the University of
-              California Santa Cruz. At UCSC I obtained a B.S. in Computer
-              Science and I am currently interested in job opportunities in web
-              development.
+              Hello! Thank you for stopping by my page to learn more about me. I
+              am Johana, a first generation college graduate from the University
+              of California, Santa Cruz. I obtained a B.S. in Computer Science
+              and I am currently interested in job opportunities in Web
+              Development.
             </p>
             <p>
-              Outside of coding I enjoy doing yoga, thrifting, running, watching
-              comedy tv shows and hiking. I've hiked many beautiful places but
-              my favorite has been Zion National Park, and Angel's Landing trail
-              at Zion has actually been my favorite hiking trail so far.
-              Although the trail was challenging and I had to wake up at 4 am to
-              avoid big crowds, the views were beautiful and definitely worth
+              Outside of coding I enjoy thrifting, running, watching comedy tv
+              shows and hiking. I've hiked many beautiful places including Zion
+              National Park, which is known for many challenging trails like
+              Angel's Landing trail. It was my favorite trail to hike by far,
+              although the trail was challenging and I had to wake up at 4 am to
+              avoid big crowds; the views were beautiful and definitely worth
               it!
             </p>
             <p>
-              If you would like to connect with me about any work opportunities
+              If you would like to connect with me about any work opportunities,
               you can reach me at any of the links I have below and you can also
               check out my <a> resume </a>
               <a href={Pdf} target="_blank">

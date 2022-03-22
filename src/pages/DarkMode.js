@@ -43,15 +43,6 @@ function DarkMode() {
             </p>
           </div>
         </div>
-        {/* <div class="project-image">
-          <img src="wave.jpeg" alt="Girl in a jacket" />
-        </div> */}
-        {/* <div class="project-video">
-          <video autoPlay loop muted width="850" height="500">
-            <source src="demo.mov" type="video/mp4" />
-          </video>
-          <script>document.getElementById('vid').play();</script>
-        </div> */}
         <div class="boba-link">
           <Link to="/Boba">
             BobaTracker<sup> Next Project</sup>

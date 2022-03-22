@@ -1,15 +1,36 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Boba.css";
+import { SliderData } from "../components/SliderData.js";
+import {
+  FaArrowAltCircleRight,
+  FaArrowAltCircleLeft,
+  FaArrowRight,
+  FaArrowLeft,
+} from "react-icons/fa";
 
 function Boba() {
+  const slides = SliderData;
+  const [current, setCurrent] = useState(0);
+  const length = slides.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length - 1 ? 0 : current + 1);
+  };
+
+  const prevSlide = () => {
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };
+
+  if (!Array.isArray(slides) || slides.length <= 0) {
+    return null;
+  }
   return (
     <div class="boba-container">
       <div class="boba-layer">
         <div class="boba-title">
           <p class="one">Boba </p>
           <p class="two">Tracker</p>
-          {/* <hr /> */}
         </div>
         <div class="boba-columns-container">
           <div class="boba-column-language">
@@ -28,11 +49,6 @@ function Boba() {
             <div class="boba-description">
               <p>Project Details</p>
             </div>
-            {/* <div class="bobatracker-link">
-              <a href="http://boba-frontend.s3-website-us-west-1.amazonaws.com/login">
-                Link: bobatracker.com
-              </a>
-            </div> */}
             <p>
               This is a project I was part of while taking the course
               ‘Introduction to Software Engineering’ at UC Santa Cruz. More
@@ -54,17 +70,22 @@ function Boba() {
             </p>
           </div>
         </div>
-        <div class="project-image">
-          <img src="Dashboard.png" alt="Girl in a jacket" />
-        </div>
+        <section class="slider">
+          <FaArrowLeft class="left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="right-arrow" onClick={nextSlide} />
+          {SliderData.map((slide, index) => {
+            return (
+              <div
+                className={index === current ? "slide active" : "slide"}
+                key={index}
+              >
+                {index === current && <img src={slide.image} class="image" />}
+              </div>
+            );
+          })}
+          {/* <img src="Dashboard.png" alt="Girl in a jacket" /> */}
+        </section>
 
-        {/* video demo */}
-        {/* <div class="boba-project-video">
-          <video autoPlay loop muted width="850" height="500">
-            <source src="BobaVideo.mov" type="video/mp4" />
-          </video>
-          <script>document.getElementById('vid').play();</script>
-        </div> */}
         <div class="dark-link">
           <Link to="/DarkMode">
             DarkMode<sup> Next Project</sup>
