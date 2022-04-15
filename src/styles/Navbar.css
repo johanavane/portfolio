@@ -30,3 +30,9 @@ button {
   /* color: #23d5ab; */
   color: black;
 }
+
+@media (max-width: 43rem) {
+  .container {
+    padding: 0 10px;
+  }
+}

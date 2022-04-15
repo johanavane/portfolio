@@ -11,20 +11,16 @@ function DarkMode() {
           <p class="two">Mode</p>
           {/* <hr /> */}
         </div>
-        <div class="project-video">
-          <video autoPlay loop muted width="850" height="500">
-            <source src="demo.mov" type="video/mp4" />
-          </video>
-          <script>document.getElementById('vid').play();</script>
-        </div>
         <div class="columns-container">
           <div class="column-language">
-            <p>Languages</p>
-            <ul class="language">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
+            <div class="vane">
+              <p>Languages</p>
+              <ul class="language">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
           </div>
           <div class="column-about">
             <div class="description">
@@ -43,10 +39,19 @@ function DarkMode() {
             </p>
           </div>
         </div>
-        <div class="boba-link">
-          <Link to="/Boba">
-            BobaTracker<sup> Next Project</sup>
-          </Link>
+        <div class="project-video">
+          <video autoPlay loop muted width="850" height="500">
+            <source src="demo.mov" type="video/mp4" />
+          </video>
+          <script>document.getElementById('vid').play();</script>
+        </div>
+        <div class="boba-end">
+          <div class="boba-next">
+            <Link to="/Boba">Next Project</Link>
+          </div>
+          <div class="boba-link">
+            <Link to="/Boba">BobaTracker</Link>
+          </div>
         </div>
       </div>
     </div>

@@ -56,6 +56,9 @@ function Navbar({ history }) {
   return (
     <header>
       <div className="container">
+        {/* <div class="logo-home">
+          <a href="/">J - M</a>
+        </div> */}
         <button disabled={disabled} onClick={handleMenu}>
           {/* <FaIcons.FaBars /> */}
           {/* <FcDatabase /> */}

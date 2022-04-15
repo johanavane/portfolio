@@ -34,16 +34,20 @@ function Boba() {
         </div>
         <div class="boba-columns-container">
           <div class="boba-column-language">
-            <p>Languages</p>
-            <ul class="boba-language">
-              <li>HTML</li>
-              <li>Tailwind CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            <p>Library</p>
-            <ul class="boba-language">
-              <li>React.js</li>
-            </ul>
+            <div class="vane">
+              <p>Languages</p>
+              <ul class="boba-language">
+                <li>HTML</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+            <div class="vane">
+              <p>Library</p>
+              <ul class="boba-language">
+                <li>React.js</li>
+              </ul>
+            </div>
           </div>
           <div class="boba-column-about">
             <div class="boba-description">
@@ -83,13 +87,14 @@ function Boba() {
               </div>
             );
           })}
-          {/* <img src="Dashboard.png" alt="Girl in a jacket" /> */}
         </section>
-
-        <div class="dark-link">
-          <Link to="/DarkMode">
-            DarkMode<sup> Next Project</sup>
-          </Link>
+        <div class="dark-end">
+          <div class="dark-next">
+            <Link to="/DarkMode">Next Project</Link>
+          </div>
+          <div class="dark-link">
+            <Link to="/DarkMode">DarkMode</Link>
+          </div>
         </div>
       </div>
     </div>

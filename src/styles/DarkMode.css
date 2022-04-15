@@ -13,6 +13,7 @@
   background-color: white;
   height: 100%;
   overflow: scroll;
+  overflow-x: hidden;
 }
 
 /* Dark Mode title */
@@ -31,9 +32,6 @@
   text-align: center;
   font-family: "Yeseva One", cursive;
 }
-/* .title hr {
-  margin: -80px 360px 80px 360px;
-} */
 
 .columns-container {
   margin: 0 280px 0 280px;
@@ -80,35 +78,25 @@
   line-height: 29px;
 }
 
-.boba-link {
-  font-size: 70px;
+.boba-end {
+  font-size: 60px;
   font-weight: 400;
-  line-height: 116px;
+  line-height: 75px;
   text-align: center;
-  /* height: 160px; */
-  /* position: relative; */
-  margin-top: 80px;
+  margin-top: 100px;
 }
-.boba-link a {
+.boba-end a {
   text-decoration: none;
   color: #42682f;
 }
-
-img {
-  width: 100%;
-  /* height: 650px; */
-  /* overflow: hidden; */
-  object-fit: contain;
+.boba-next {
+  font-weight: bold;
 }
-
-sup {
-  font-size: 17px;
+.boba-link {
+  font-size: 20px;
+  margin-bottom: 60px;
+  font-weight: bold;
 }
-
-/* .project-image {
-  text-align: center;
-  margin-top: 80px;
-} */
 
 .project-video {
   text-align: center;
@@ -116,100 +104,219 @@ sup {
   margin-bottom: 80px;
 }
 
-/*  */
-/* .darkmode-container {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  height: 100%;
-  width: 100%;
+
+/* Responsive -------------------------------------------------- */
+@media screen and (min-width: 100rem) {
+  /* .boba-title p {
+    color: hotpink;
+  } */
+  .columns-container {
+    margin-left: 22%;
+    margin-right: 26%;
+  }
 }
 
-.darkmode-layer {
-  position: relative;
-  background-color: black;
-  height: 100%;
-  overflow: scroll;
+
+
+@media screen and (max-width: 65rem) {
+  /* .title p {
+    color: brown;
+  } */
+  .columns-container {
+    margin-left: 10%;
+    margin-right: 16%;
+  }
 }
 
-.title {
-  margin: 200px 0 0 0;
-}
-.title p {
-  color: white;
-  font-size: 200px;
-  font-weight: 400;
-  line-height: 116px;
-  position: relative;
-  text-align: center;
-}
-.title hr {
-  margin: -80px 450px 80px 450px;
-}
-
-.columns-container {
-  margin: 0 450px 0 450px;
-  display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 1fr;
-  column-gap: 90px;
-}
-
-.column-language {
-  grid-column: 1;
-  grid-row: 1/2;
-}
-.column-language p {
-  left: -260px;
-  top: -50px;
-  font-size: 23px;
-  color: white;
-  font-weight: bold;
-}
-
-.column-about {
-  grid-column: 2;
-  grid-row: 1/2;
-  text-align: left;
-}
-.column-about p {
-  left: -260px;
-  top: -50px;
-  font-size: 23px;
-  color: white;
-  line-height: 29px;
-}
-.description p {
-  font-weight: bold;
-}
-
-.language li {
-  font-size: 23px;
-  list-style-type: circle;
-  color: white;
-  line-height: 29px;
-}
-
-.boba-link {
-  font-size: 138px;
-  font-weight: 400;
-  line-height: 116px;
-  text-align: center;
-  margin-top: 80px;
-}
-.boba-link a {
-  text-decoration: none;
-  color: white;
+/* IPAD */
+@media screen and (max-width: 55rem) {
+  .title {
+    margin: -80px 0 -50px 0;
+  }
+  .title p {
+    /* color: orange; */
+    font-size: 140px;
+    line-height: 50px;
+  }
+  .columns-container {
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 16%;
+    margin-bottom: -150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .column-language{
+    grid-column: 1;
+    grid-row: 1/2;
+    display: flex;
+  }
+  .column-language p {
+    font-size: 19px;
+  }
+  .language li {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .vane{
+    flex: 50%;
+  }
+  .column-about {
+    grid-column: 1;
+    grid-row: 2/3;
+    text-align: left;
+    margin-top: -170px;
+  }
+  .column-about p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .description p {
+    font-size: 19px;
+  }
+  .project-video video{
+    width: 100%;
+  }
+  .project-video{
+    margin-top: -50px;
+  }
+  .boba-end {
+    font-size: 40px;
+    line-height: 48px;
+    margin: -40px 0 0 0;
+  }
+  .boba-link {
+    font-size: 18px;
+  }
 }
 
-img {
-  width: 50%;
-  height: 40%;
+@media screen and (max-width: 45rem) {
+  .title {
+    margin: -80px 0 -50px 0;
+  }
+  /* .title p {
+    color: blanchedalmond;
+  } */
+  .columns-container {
+    margin-bottom: -180px;
+  }
+  .column-about {
+    margin-top: -200px;
+  } 
+  .project-video{
+    margin-top: -240px;
+  }
+  .boba-end {
+    margin: -50px 0 0 0;
+  }
 }
 
-.project-image {
-  text-align: center;
-  margin-top: 80px;
-} */
+/* Surface Duo */
+@media screen and (max-width: 40rem) {
+  .title {
+    margin: -80px 0 -50px 0;
+  }
+  .title p {
+    /* color: purple; */
+    font-size: 100px;
+    line-height: 10px;
+  }
+  .columns-container {
+    margin-bottom: -210px;
+  }
+  .column-language p {
+    font-size: 17px;
+  }
+  .language li {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .column-about {
+    margin-top: -190px;
+  }
+  .column-about p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .description p {
+    font-size: 17px;
+  }
+  .project-video{
+    margin-top: -250px;
+  }
+  .boba-end {
+    font-size: 36px;
+    line-height: 45px;
+    margin: -80px 0 0 0;
+  }
+  .boba-link {
+    font-size: 16px;
+  }
+}
+
+/* XR, S20, A51/71 */
+@media screen and (max-width: 26rem) {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .title p {
+    /* color: pink; */
+    font-size: 90px;
+    line-height: 0;
+  }
+  .columns-container {
+    margin-bottom: -380px;
+  }
+  .column-about {
+    margin-top: -280px;
+  }
+  .project-video{
+    margin-top: -450px;
+  }
+  .boba-end {
+    margin: -150px 0 0 0;
+  }
+}
+
+/* 12 Pro, Pixel 5 */
+@media screen and (max-width: 25rem) {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .columns-container {
+    margin-bottom: -280px;
+  }
+  .column-about {
+    margin-top: -270px;
+  }
+  .project-video{
+    margin-top: -430px;
+  }
+  .boba-end {
+    margin: -150px 0px -50px 0px;
+  }
+}
+
+/* SE, Samsung 8+ */
+@media screen and (max-width: 24rem) {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .title p {
+    /* color: black; */
+    font-size: 80px;
+  }
+  .columns-container {
+    margin-bottom: -60px;
+  }
+  .column-about {
+    margin-top: -180px;
+  }
+  .project-video{
+    margin-top: -220px;
+  }
+  .boba-end {
+    margin: -110px 0 0 0;
+  }
+}

@@ -11,22 +11,19 @@
   width: 100%;
 }
 
-.menu-layer {
-  position: relative;
-  /* background-color: #000000; */
-  /* background-color: #9bb649; */
-  /* background-color: #f8fbe8; */
-  background-color: #42682f;
-  height: 100%;
-  overflow: hidden;
-}
-
 /*  vertical and horizontal centering of links */
 .menu-links {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.menu-layer {
+  position: relative;
+  overflow: hidden;
+  background-color: #42682f;
+  height: 100%;
 }
 
 /* text align: moves links to center of page
@@ -41,6 +38,8 @@ nav {
 .menu-links li {
   list-style: none;
   font-size: 8rem;
+  /* font-size: 10vw; */
+  /* font-size: calc(0.75em + 17vmin); */
   height: 160px;
   position: relative;
 }
@@ -50,11 +49,26 @@ nav {
   color: white;
   text-decoration: none;
   font-family: "Yeseva One", cursive;
+  overflow: hidden;
 }
 
 /* text turns pink when hovering */
-.menu-links a:hover {
-  color: white;
+/* .menu-links a:hover {
+  text-decoration: line-through;
+  text-decoration-color: black;
+  text-decoration-thickness: 5px;
+} */
+
+/* rules here apply to devices from 0px to 43rem (inclusive) */
+@media (max-width: 43rem) {
+  .menu-links li {
+    list-style: none;
+    font-size: 6rem;
+    height: 130px;
+    line-height: 130px;
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 /* --------------------------------------------------- 

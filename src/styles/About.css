@@ -1,37 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;700&display=swap");
-.grid-container {
+.flexbox-container {
   /* changing this from 100vh to 100% changes the height of the box */
   /* position: relative; */
   height: 98vh;
-  display: grid;
-  grid-template-columns: 600px 1fr;
+  display: flex;
+  gap: 10%;
+  /* flex-wrap: wrap; */
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  /* flex-wrap: wrap; */
+  /* grid-template-columns: 600px 1fr;
   grid-template-rows: 1fr;
   column-gap: 90px;
-  margin-top: 10px;
-}
-.grid-container a {
-  color: black;
+  margin-top: 10px; */
+  /* overflow: hidden; */
 }
 
-.grid-photo {
-  /* background: #e4ddd3; */
-  grid-column: 1;
-  grid-row: 1/2;
-}
-
-.portrait {
-  /* margin: 0; */
-  /* text-align: right; */
-  position: fixed;
-  top: 50%;
-  transform: translate(20%, -50%);
-  margin: 0px 900px 0px 0px;
-  /* -webkit-transform: translate(-25%, -50%); */
-  /* transform: translate(15%, -50%); */
-}
-
-.grid-photo img {
+.portrait img{
+  display: block;
   width: 500px;
+  border-radius: 20px;
+  /* height: 100%;
+  width: 100%; */
+  /* position: relative; */
+  /* margin: auto; */
 }
 
 .upper-image {
@@ -58,19 +52,21 @@
   font-size: large;
 }
 
-.icon-links {
-  text-align: center;
-}
-
 .icon-links,
 .intro p {
   font-size: 16px;
   line-height: 29px;
   color: black;
   letter-spacing: 0.04em;
-  text-align: center;
+  text-align: left;
   font-family: "Gayathri", sans-serif;
   font-weight: 400;
+}
+.intro a {
+  color: black;
+}
+.icon-links p{
+text-align: center;
 }
 .location p {
   font-size: 16px;
@@ -84,7 +80,126 @@
   color: #7fa667;
 }
 
-/* body {
-  font-size: 17px;
-  line-height: 29px;
-} */
+/* @media (max-width: 800px) { */
+@media screen and (max-width: 75rem){
+  .flexbox-container {
+    flex-direction: column;
+    gap: 5%;
+  }
+  .portrait img{
+    width: 100%;
+  }
+  .grid-two{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .intro p{
+    /* color: blue; */
+  }
+  .icon-links,
+  .intro p {
+    font-size: 18px;
+    line-height: 31px;
+  }
+  .icon-links p{
+  text-align: center;
+  }
+  .location p {
+    font-size: 18px;
+    line-height: 31px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 57rem) {
+  .flexbox-container{
+    margin-left: 15px;
+    gap: 5%;
+  }
+  .grid-two{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .icon-links a {
+    font-size: 16px;
+  }
+  .icon-links,
+  .intro p {
+    font-size: 16px;
+    line-height: 29px;
+    /* color: gray; */
+  }
+  .location p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+
+
+@media screen and (max-width: 45rem) {
+  .flexbox-container{
+    margin-left: 15px;
+    gap: 5%;
+  }
+  .grid-two{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .icon-links a {
+    font-size: 16px;
+  }
+  .icon-links,
+  .intro p {
+    font-size: 16px;
+    line-height: 26px;
+    /* color: orange; */
+  }
+  .location p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+
+/* Surface Duo */
+@media screen and (max-width: 40rem) {
+  .flexbox-container{
+    margin-left: 15px;
+    gap: 5%;
+  }
+  .icon-links a {
+    padding-left: 1em;
+    font-size: 13px;
+  }
+  .icon-links,
+  .intro p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+  .location p {
+    font-size: 12px;
+    line-height: 21px;
+  }
+}
+
+/* XR, S20, A51/71 */
+/* 12 Pro, Pixel 5 */
+/* SE, Samsung 8+ */
+@media screen and (max-width: 26rem) {
+  .flexbox-container{
+    margin-left: 15px;
+  }
+  .icon-links a {
+    padding-left: 1em;
+    font-size: 12px;
+  }
+  .icon-links,
+  .intro p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .location p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

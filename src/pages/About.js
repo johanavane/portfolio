@@ -3,7 +3,7 @@ import "../styles/About.css";
 import * as FaIcons from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { GrLinkedin } from "react-icons/gr";
-import Pdf from "../pdf/Eyec.pdf";
+import Pdf from "../pdf/JohanaMartinezResume.pdf";
 
 // import { IconName } from "react-icons/fa";
 
@@ -30,7 +30,7 @@ class About extends React.Component {
     };
     const { windowHeight } = this.state;
     return (
-      <div class="grid-container">
+      <div class="flexbox-container">
         <div class="grid-photo">
           <div class="portrait">
             <img src="portrait.jpeg" />

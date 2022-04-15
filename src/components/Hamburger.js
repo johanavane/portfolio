@@ -55,13 +55,16 @@ function Hamburger({ state }) {
 
   return (
     <div ref={(el) => (menu = el)} className="hamburger-menu">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menu-links">
           {/* nav tag used for navigation links */}
           <nav>
             <ul>
               <li>
-                <Link to="/">Home</Link>
+                <span>
+                  <Link to="/">Home</Link>
+                </span>
               </li>
               <li>
                 <Link to="/about">About</Link>
