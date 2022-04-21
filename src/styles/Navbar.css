@@ -2,26 +2,37 @@
 chnages made here will only affect navbar at top of page
 */
 
-.container {
+/* .container {
   width: 1280px;
   min-width: 1280px;
-  /* margin: 0 auto; */
-}
+} */
 
-.wrapper {
-  padding: 0 48px;
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap");
+
+.container {
+  padding: 0 60px;
   position: relative;
   z-index: 10;
-  height: 100px;
+  height: 50px;
   display: flex;
-  align-items: center;
+  float: right;
 }
 
+/* for menu button */
 button {
   border: none;
   background: none;
   outline: none;
   cursor: pointer;
-  font-size: 3rem;
-  mix-blend-mode: difference;
+  font-size: 20px;
+  font-family: "Gayathri", sans-serif;
+  /* mix-blend-mode: difference; */
+  /* color: #23d5ab; */
+  color: black;
+}
+
+@media (max-width: 43rem) {
+  .container {
+    padding: 0 10px;
+  }
 }

@@ -1,0 +1,322 @@
+.darkmode-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.darkmode-layer {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* Dark Mode title */
+.one {
+  margin: 200px 0 0 0;
+}
+.two {
+  margin: 100px 0 200px 0;
+}
+.title p {
+  color: #42682f;
+  font-size: 210px;
+  font-weight: 400;
+  line-height: 116px;
+  position: relative;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+}
+
+.columns-container {
+  margin: 0 280px 0 280px;
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 90px;
+}
+
+.column-language {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+.column-language p {
+  left: -260px;
+  top: -50px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.column-about {
+  grid-column: 2;
+  grid-row: 1/2;
+  text-align: left;
+}
+.column-about p {
+  left: -260px;
+  top: -50px;
+  font-size: 17px;
+  color: black;
+  line-height: 29px;
+}
+.description p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.language li {
+  font-size: 17px;
+  list-style-type: circle;
+  color: black;
+  line-height: 29px;
+}
+
+.boba-end {
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+  margin-top: 100px;
+}
+.boba-end a {
+  text-decoration: none;
+  color: #42682f;
+}
+.boba-next {
+  font-weight: bold;
+}
+.boba-link {
+  font-size: 20px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+.project-video {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+
+/* Responsive -------------------------------------------------- */
+@media screen and (min-width: 100rem) {
+  /* .boba-title p {
+    color: hotpink;
+  } */
+  .columns-container {
+    margin-left: 22%;
+    margin-right: 26%;
+  }
+}
+
+
+
+@media screen and (max-width: 65rem) {
+  /* .title p {
+    color: brown;
+  } */
+  .columns-container {
+    margin-left: 10%;
+    margin-right: 16%;
+  }
+}
+
+/* IPAD */
+@media screen and (max-width: 55rem) {
+  .title {
+    margin: -80px 0 -50px 0;
+  }
+  .title p {
+    /* color: orange; */
+    font-size: 140px;
+    line-height: 50px;
+  }
+  .columns-container {
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 16%;
+    margin-bottom: -150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .column-language{
+    grid-column: 1;
+    grid-row: 1/2;
+    display: flex;
+  }
+  .column-language p {
+    font-size: 19px;
+  }
+  .language li {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .vane{
+    flex: 50%;
+  }
+  .column-about {
+    grid-column: 1;
+    grid-row: 2/3;
+    text-align: left;
+    margin-top: -170px;
+  }
+  .column-about p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .description p {
+    font-size: 19px;
+  }
+  .project-video video{
+    width: 100%;
+  }
+  .project-video{
+    margin-top: -50px;
+  }
+  .boba-end {
+    font-size: 40px;
+    line-height: 48px;
+    margin: -40px 0 0 0;
+  }
+  .boba-link {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 45rem) {
+  .title {
+    margin: -80px 0 -50px 0;
+  }
+  /* .title p {
+    color: blanchedalmond;
+  } */
+  .columns-container {
+    margin-bottom: -180px;
+  }
+  .column-about {
+    margin-top: -200px;
+  } 
+  .project-video{
+    margin-top: -240px;
+  }
+  .boba-end {
+    margin: -50px 0 0 0;
+  }
+}
+
+/* Surface Duo */
+@media screen and (max-width: 40rem) {
+  .title {
+    margin: -80px 0 -50px 0;
+  }
+  .title p {
+    /* color: purple; */
+    font-size: 100px;
+    line-height: 10px;
+  }
+  .columns-container {
+    margin-bottom: -210px;
+  }
+  .column-language p {
+    font-size: 17px;
+  }
+  .language li {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .column-about {
+    margin-top: -190px;
+  }
+  .column-about p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .description p {
+    font-size: 17px;
+  }
+  .project-video{
+    margin-top: -250px;
+  }
+  .boba-end {
+    font-size: 36px;
+    line-height: 45px;
+    margin: -80px 0 0 0;
+  }
+  .boba-link {
+    font-size: 16px;
+  }
+}
+
+/* XR, S20, A51/71 */
+@media screen and (max-width: 26rem) {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .title p {
+    /* color: pink; */
+    font-size: 90px;
+    line-height: 0;
+  }
+  .columns-container {
+    margin-bottom: -380px;
+  }
+  .column-about {
+    margin-top: -280px;
+  }
+  .project-video{
+    margin-top: -450px;
+  }
+  .boba-end {
+    margin: -150px 0 0 0;
+  }
+}
+
+/* 12 Pro, Pixel 5 */
+@media screen and (max-width: 25rem) {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .columns-container {
+    margin-bottom: -280px;
+  }
+  .column-about {
+    margin-top: -270px;
+  }
+  .project-video{
+    margin-top: -430px;
+  }
+  .boba-end {
+    margin: -150px 0px -50px 0px;
+  }
+}
+
+/* SE, Samsung 8+ */
+@media screen and (max-width: 24rem) {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .title p {
+    /* color: black; */
+    font-size: 80px;
+  }
+  .columns-container {
+    margin-bottom: -60px;
+  }
+  .column-about {
+    margin-top: -180px;
+  }
+  .project-video{
+    margin-top: -220px;
+  }
+  .boba-end {
+    margin: -110px 0 0 0;
+  }
+}

@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Yeseva+One&display=swap");
+
 .hamburger-menu {
-  /* display: none; */
+  display: none;
   z-index: 9;
   top: 0;
   left: 0;
@@ -9,58 +11,75 @@
   width: 100%;
 }
 
+/*  vertical and horizontal centering of links */
+.menu-links {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .menu-layer {
   position: relative;
-  /* background-color: #e3f0ff; */
-  background-color: #000000;
-  height: 100%;
   overflow: hidden;
+  background-color: #42682f;
+  height: 100%;
 }
 
-.menu-links {
-  /*  position and top:
-  add spacing to the top of page and links */
-  position: relative;
-  top: 250px;
-}
-
+/* text align: moves links to center of page
+if not here then links positioned at left side of page */
 nav {
-  display: block;
-  /* text align: moves links to center of page
-  if not here then links positioned at left side of page */
+  /* commenting out bc i dont know what dispaly block does */
+  /* display: block; */
   text-align: center;
 }
 
-ul {
-  /* not sure what these two do
-  when i remove them the lonks move slightky to the left and */
-  margin: 0;
-  padding: 0;
-}
-
-li {
+/* stylyng of the 3 links */
+.menu-links li {
   list-style: none;
-  font-size: 6rem;
-  font-weight: 700;
-  height: 135px;
+  font-size: 8rem;
+  /* font-size: 10vw; */
+  /* font-size: calc(0.75em + 17vmin); */
+  height: 160px;
   position: relative;
+  margin-right: 45px;
 }
 
 /* link text = white, there is no line under links */
-a {
-  color: #fff;
+.menu-links a {
+  color: white;
   text-decoration: none;
+  font-family: "Yeseva One", cursive;
+  overflow: hidden;
 }
 
-/* text turns black when hovering */
+/* text turns pink when hovering */
+/* .menu-links a:hover {
+  text-decoration: line-through;
+  text-decoration-color: black;
+  text-decoration-thickness: 5px;
+} */
 
+/* rules here apply to devices from 0px to 43rem (inclusive) */
+@media (max-width: 43rem) {
+  .menu-links li {
+    list-style: none;
+    font-size: 6rem;
+    height: 130px;
+    line-height: 130px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+/* --------------------------------------------------- 
 .home:hover {
   color: #fba24f;
 }
-
 .about:hover {
   color: #5b59f3;
 }
 .experience:hover {
   color: #ff7e5b;
-}
+} 
+------------------------------------------------------ */

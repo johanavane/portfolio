@@ -1,0 +1,425 @@
+.boba-container {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.boba-layer {
+  position: relative;
+  background-color: white;
+  height: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* Dark Mode title */
+.boba-title {
+  margin: 200px 0 0 0;
+}
+.boba-title p {
+  color: #42682f;
+  font-size: 200px;
+  font-weight: 400;
+  line-height: 116px;
+  position: relative;
+  text-align: center;
+  font-family: "Yeseva One", cursive;
+}
+
+.boba-columns-container {
+  margin: 0 280px 0 280px;
+  /* height: 100%; */
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 90px;
+}
+
+.boba-column-language {
+  grid-column: 1;
+  grid-row: 1/2;
+}
+.boba-column-language p {
+  left: -260px;
+  top: -50px;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.boba-column-about {
+  grid-column: 2;
+  grid-row: 1/2;
+  text-align: left;
+}
+.boba-column-about p {
+  left: -260px;
+  top: -50px;
+  font-size: 17px;
+  color: black;
+  line-height: 29px;
+}
+.boba-description p {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.boba-language li {
+  font-size: 17px;
+  list-style-type: circle;
+  color: black;
+  line-height: 29px;
+}
+
+.dark-end {
+  position: relative;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 75px;
+  text-align: center;
+  margin-top: 100px;
+}
+.dark-end a {
+  text-decoration: none;
+  color: #42682f;
+  text-align: center;
+}
+.dark-next {
+  font-weight: bold;
+}
+.dark-link {
+  font-size: 20px;
+  margin-bottom: 60px;
+  font-weight: bold;
+}
+
+img {
+  width: 80%;
+  /* height: 650px; */
+  /* overflow: hidden; */
+  object-fit: contain;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center;
+  margin-top: 80px; */
+  /* text-align: center; */
+}
+.image {
+  width: 1000px;
+  height: 600px;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 90px;
+  font-size: 2.2rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 90px;
+  font-size: 2.2rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+.slide.active {
+  opacity: 1;
+  transition-duration: 0.5s;
+  transform: scale(1.08);
+}
+
+
+
+/* --------------------------------------------------------------------------------------------------------- */
+/* RESPONSIVE Screen Resizing */
+@media screen and (min-width: 100rem) {
+  /* .boba-title p {
+    color: hotpink;
+  } */
+  .boba-columns-container {
+    margin-left: 22%;
+    margin-right: 26%;
+  }
+  .image {
+    width: 1200px;
+    height: 1200px;
+  }
+  .right-arrow {
+    right: 120px;
+  }
+  .left-arrow {
+    left: 120px;
+  }
+}
+
+
+@media screen and (max-width: 55rem) {
+  /* .boba-title p {
+    color: brown;
+  } */
+  .boba-columns-container {
+    margin-left: 10%;
+    margin-right: 16%;
+  }
+  .image {
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+  }
+}
+
+/* IPAD */
+@media screen and (max-width: 55rem) {
+  .boba-title {
+    margin: -80px 0 -50px 0;
+  }
+  .boba-title p {
+    /* color: orange; */
+    font-size: 140px;
+    line-height: 50px;
+  }
+  .boba-columns-container {
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 16%;
+    margin-bottom: -150px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .boba-column-language{
+    grid-column: 1;
+    grid-row: 1/2;
+    display: flex;
+  }
+  .boba-column-language p {
+    font-size: 19px;
+  }
+  .boba-language li {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .vane{
+    flex: 50%;
+  }
+  .boba-column-about {
+    grid-column: 1;
+    grid-row: 2/3;
+    text-align: left;
+    margin-top: -170px;
+  }
+  .boba-column-about p {
+    font-size: 17px;
+    line-height: 29px;
+  }
+  .boba-description p {
+    font-size: 19px;
+  }
+  .image {
+   width: 650px;
+   border-radius: 50px;
+   overflow: hidden;
+   perspective: 1px;
+  }
+  .right-arrow {
+    right: 50px;
+    font-size: 1.2rem;
+  }
+  .left-arrow {
+    left: 50px;
+    font-size: 1.2rem;
+  }
+  .dark-end {
+    font-size: 40px;
+    line-height: 48px;
+    margin: -40px 0 0 0;
+  }
+  .dark-link {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 45rem) {
+  .boba-title {
+    margin: -80px 0 -50px 0;
+  }
+  /* .boba-title p {
+    color: blanchedalmond;
+  } */
+  .boba-columns-container {
+    margin-bottom: -180px;
+  }
+  .boba-column-about {
+    margin-top: -200px;
+  }
+  .image {
+   width: 580px;
+  }
+  
+  .dark-end {
+    margin: -50px 0 0 0;
+  }
+}
+
+
+/* Surface Duo */
+@media screen and (max-width: 40rem) {
+  .boba-title {
+    margin: -80px 0 -50px 0;
+  }
+  .boba-title p {
+    /* color: purple; */
+    font-size: 100px;
+    line-height: 10px;
+  }
+  .boba-columns-container {
+    margin-bottom: -210px;
+  }
+  .boba-column-language p {
+    font-size: 17px;
+  }
+  .boba-language li {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .boba-column-about {
+    margin-top: -190px;
+  }
+  .boba-column-about p {
+    font-size: 16px;
+    line-height: 27px;
+  }
+  .boba-description p {
+    font-size: 17px;
+  }
+  .image {
+   width: 460px;
+  }
+  .right-arrow {
+    margin-top: 200px;
+    right: 140px;
+    font-size: 1.2rem;
+  }
+  .left-arrow {
+    margin-top: 200px;
+    left: 140px;
+    font-size: 1.2rem;
+  }
+  .dark-end {
+    font-size: 36px;
+    line-height: 45px;
+    margin: -80px 0 0 0;
+  }
+  .dark-link {
+    font-size: 16px;
+  }
+}
+
+/* XR, S20, A51/71 */
+@media screen and (max-width: 26rem) {
+  .boba-title {
+    margin: -80px 0 -80px 0;
+  }
+  .boba-title p {
+    /* color: pink; */
+    font-size: 90px;
+    line-height: 0;
+  }
+  .boba-columns-container {
+    margin-bottom: -380px;
+  }
+  .boba-column-about {
+    margin-top: -260px;
+  }
+  .image {
+   width: 360px;
+  }
+  .right-arrow {
+    margin-top: 170px;
+  }
+  .left-arrow {
+    margin-top: 170px;
+  }
+  .dark-end {
+    margin: -200px 0 0 0;
+  }
+}
+
+
+/* 12 Pro, Pixel 5 */
+@media screen and (max-width: 25rem) {
+  .boba-title {
+    margin: -80px 0 -80px 0;
+  }
+  .boba-columns-container {
+    margin-bottom: -280px;
+  }
+  .boba-column-about {
+    margin-top: -250px;
+  }
+  .right-arrow {
+    margin-top: 160px;
+  }
+  .left-arrow {
+    margin-top: 160px;
+  }
+  .dark-end {
+    margin: -200px 0px -50px 0px;
+  }
+}
+
+/* SE, Samsung 8+ */
+@media screen and (max-width: 24rem) {
+  .boba-title {
+    margin: -80px 0 -80px 0;
+  }
+  .boba-title p {
+    /* color: black; */
+    font-size: 80px;
+  }
+  .boba-columns-container {
+    margin-bottom: -60px;
+  }
+  .boba-column-about {
+    margin-top: 20px;
+  }
+  .image {
+   width: 330px;
+  }
+  .right-arrow {
+    margin-top: 150px;
+    right: 140px;
+    font-size: 1.2rem;
+  }
+  .left-arrow {
+    margin-top: 150px;
+    left: 140px;
+    font-size: 1.2rem;
+  }
+  .dark-end {
+    margin: -110px 0 0 0;
+  }
+}
