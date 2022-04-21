@@ -27,21 +27,20 @@ function DarkMode() {
               <p>Description</p>
             </div>
             <p>
-              This is a chrome extension I created that toggles between light
-              mode and dark mode on any chrome webpage. The purpose of this
-              project was to challenge myself, since I had never built a chrome
-              extension before and I was unfamiliar with the components that
-              make up a chrome extension.
+              This is a chrome extension I created on my own that toggles
+              between Light Mode and Dark Mode on any chrome webpage. The
+              extension changes the color of the text and the background after
+              clicking on an ON/OFF button.
             </p>
             <p>
-              Below is a demo of how "Dark Mode" works, since it's not in the
-              Chrome Web Store.
+              Since this project is not in the Chrome Web Store I included a
+              demo below of its functionality.
             </p>
           </div>
         </div>
         <div class="project-video">
           <video autoPlay loop muted width="850" height="500">
-            <source src="demo.mov" type="video/mp4" />
+            <source src="darkmode_demo.mov" type="video/mp4" />
           </video>
           <script>document.getElementById('vid').play();</script>
         </div>

@@ -54,23 +54,26 @@ function Boba() {
               <p>Project Details</p>
             </div>
             <p>
-              This is a project I was part of while taking the course
-              ‘Introduction to Software Engineering’ at UC Santa Cruz. More
-              specifically, it is a web application that allows users to track
-              their weekly milk tea spending and their average sugar intake.
+              This is a project I took part in during the course of
+              ‘Introduction to Software Engineering’ at UC Santa Cruz. Boba
+              Tracker is a web application that allows users to track their
+              weekly Milk Tea spending and their average sugar intake. After
+              entering drink purchases, a chart is generated for weekly spending
+              and sugar intake. The user also has the option of editing and
+              deleting entries.
             </p>
             <p>
-              My roles in this project were being a developer and a Scrum
-              master, as a Scrum master I was responsible for leading the Scrum
+              My roles in this project included being a developer and a Scrum
+              Master. As a Scrum master, I was responsible for leading the Scrum
               stand up meetings where we tracked our progress. In regards to my
               contribution to the project, I created the initial mock up for the
-              UI using Figma, I also created the form needed to add new drink
-              entries, I connected the drink form to the database and I made
-              changes to the UI.
+              UI using Figma. I also created the form utilized to add new drink
+              entries, in addition I connected the drink form to the database
+              and made changes to the UI for the Login Page and Register Page.
             </p>
             <p>
-              Although the project is no longer being hosted, I have a detailed
-              walkthough of the project below.
+              Although the project is no longer being hosted I have included
+              images of the project below.
             </p>
           </div>
         </div>

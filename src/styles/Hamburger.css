@@ -42,6 +42,7 @@ nav {
   /* font-size: calc(0.75em + 17vmin); */
   height: 160px;
   position: relative;
+  margin-right: 45px;
 }
 
 /* link text = white, there is no line under links */

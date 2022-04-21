@@ -9,6 +9,9 @@ export const SliderData = [
     image: "Dashboard.png",
   },
   {
+    image: "Dashboard_2.png",
+  },
+  {
     image: "NewDrink.png",
   },
   {

@@ -33,7 +33,7 @@ class About extends React.Component {
       <div class="flexbox-container">
         <div class="grid-photo">
           <div class="portrait">
-            <img src="portrait.jpeg" />
+            <img src="portrait_nb_copy.png" />
             {/* <img src="hiking.jpg" class="upper-image" /> */}
 
             {/* <img
@@ -91,7 +91,10 @@ class About extends React.Component {
               <a href="mailto:johanavmar27@gmail.com">
                 <GrMail />
               </a>
-              <a href="https://www.linkedin.com/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/johana-martinez-alvarado-2bb9221a2"
+                target="_blank"
+              >
                 <GrLinkedin />
               </a>
             </p>
