@@ -100,31 +100,40 @@
     font-weight: bold;
     color: white;
     line-height: 0px;
-    font-family: "Gayathri", sans-serif;
   }
 
   .portfolio {
     font-size: 18px;
-    font-family: "Gill Sans", sans-serif;
-    /* margin-bottom: 30px; */
-    /* margin-bottom: 50px; */
     margin-bottom: 100px;
   }
   .welcome {
     font-size: 18px;
-    font-family: "Gill Sans", sans-serif;
     margin-top: 90px;
   }
 }
 
-/* @media screen and (max-width: 601px) {
-  div.home-text a {
-    font-size: 77px;
+@media (max-width: 22rem) {
+  .circle {
+    /* (A) SAME WIDTH & HEIGHT - SQUARE */
+    transform: translate(-50%, -50%);
+    width: 270px;
+    height: 130px;
+
+    /* (B) 50% RADIUS = CIRCLE */
+    border-radius: 50%;
+    border-width: 2.5px;
   }
-  div.home-wrapper {
-    margin-bottom: -1.5em;
+  .name p {
+    font-size: 40px;
+    line-height: 0px;
   }
-  div.home-container {
-    background-color: goldenrod;
+
+  .portfolio {
+    font-size: 17px;
+    margin-bottom: 100px;
   }
-} */
+  .welcome {
+    font-size: 17px;
+    margin-top: 80px;
+  }
+}
