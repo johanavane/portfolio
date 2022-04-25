@@ -13,7 +13,10 @@ class About extends React.Component {
   };
   constructor(props) {
     super(props);
-    this.state = { windowHeight: window.innerHeight };
+    this.stateih = { windowHeightin: window.innerHeight };
+    this.stateiw = { windowWidthin: window.innerWidth };
+    this.stateoh = { windowHeightout: window.outerHeight };
+    this.stateow = { windowWidthout: window.outerWidth };
   }
 
   componentDidMount() {
@@ -26,9 +29,15 @@ class About extends React.Component {
 
   render() {
     const handleResize = (e) => {
-      this.setState({ windowHeight: window.innerHeight });
+      this.setState({ windowHeightin: window.innerHeight });
+      this.setState({ windowWidthin: window.innerWidth });
+      this.setState({ windowHeightout: window.outerHeight });
+      this.setState({ windowWidthout: window.outerWidth });
     };
-    const { windowHeight } = this.state;
+    const { windowHeightin } = this.stateih;
+    const { windowWidthin } = this.stateiw;
+    const { windowHeightout } = this.stateoh;
+    const { windowWidthout } = this.stateow;
     return (
       <div class="flexbox-container">
         <div class="grid-photo">
@@ -61,11 +70,13 @@ class About extends React.Component {
           </div>
           <div className="intro">
             <p>
-              Hello! Thank you for stopping by my page to learn more about me. I
-              am Johana, a first generation college graduate from the University
-              of California, Santa Cruz. I obtained a B.S. in Computer Science
-              and I am currently interested in job opportunities in Web
-              Development.
+              Inner width {windowWidthin} Inner Height {windowHeightin}
+              Outer width {windowWidthin} Outer Height {windowHeightin}
+              Hello! Thank you for stopping by my page to learn more about me.
+              I'm Johana, a first generation college graduate from the
+              University of California, Santa Cruz. I obtained a B.S. in
+              Computer Science and I am currently interested in job
+              opportunities in Web Development.
             </p>
             <p>
               Outside of coding I enjoy thrifting, running, watching comedy tv
