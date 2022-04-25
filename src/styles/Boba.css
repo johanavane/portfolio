@@ -1,3 +1,4 @@
+
 .boba-container {
   top: 0;
   left: 0;
@@ -325,7 +326,7 @@ img {
 }
 
 /* iphone 12 pro max, iphone 13 pro max */
-@media screen and (max-width: 428px) and (device-height : 926px)  {
+@media screen and (max-width: 428px) and (max-height : 926px)  {
   .boba-columns-container {
     margin-bottom: -370px;
   }
@@ -370,11 +371,12 @@ img {
 }
 
 /* iphone 8 plus */
-@media screen and (max-width: 26rem) and (device-height : 736px)  {
+@media screen and (max-width: 26rem) and (max-height : 736px)  {
   .boba-title {
     margin: -80px 0 -80px 0;
   }
   .boba-title p {
+    color: pink;
     font-size: 90px;
     line-height: 0;
   }
@@ -453,7 +455,7 @@ img {
 }
 
 /* iphones */
-@media screen and (max-width: 375px) and (device-height : 812px)  {
+@media screen and (max-width: 375px) and (max-height : 812px)  {
   .boba-title {
     margin: -80px 0 -80px 0;
   }
