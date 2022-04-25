@@ -22,7 +22,7 @@
   display: block;
   width: 500px;
   border-radius: 20px;
-  background-color: #abcfec;
+  background-color: #B2D3EE;
   /* height: 100%;
   width: 100%; */
   /* position: relative; */
@@ -93,9 +93,6 @@ text-align: center;
   .grid-two{
     margin-left: 100px;
     margin-right: 100px;
-  }
-  .intro p{
-    /* color: blue; */
   }
   .icon-links,
   .intro p {
@@ -189,6 +186,7 @@ text-align: center;
 @media screen and (max-width: 26rem) {
   .flexbox-container{
     margin-left: 15px;
+    margin-bottom: 50px;
   }
   .icon-links a {
     padding-left: 1em;

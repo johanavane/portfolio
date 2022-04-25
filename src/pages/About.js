@@ -33,7 +33,7 @@ class About extends React.Component {
       <div class="flexbox-container">
         <div class="grid-photo">
           <div class="portrait">
-            <img src="portrait_nb_copy.png" />
+            <img src="selfphoto2.png" />
             {/* <img src="hiking.jpg" class="upper-image" /> */}
 
             {/* <img

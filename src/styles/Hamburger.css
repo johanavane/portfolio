@@ -66,9 +66,16 @@ nav {
     list-style: none;
     font-size: 6rem;
     height: 130px;
-    line-height: 130px;
+    line-height: 100px;
     position: relative;
     overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 22rem)  {
+  .menu-links li {
+    font-size: 4.2rem;
+    height: 130px;
   }
 }
 

@@ -155,9 +155,6 @@ img {
 /* --------------------------------------------------------------------------------------------------------- */
 /* RESPONSIVE Screen Resizing */
 @media screen and (min-width: 100rem) {
-  /* .boba-title p {
-    color: hotpink;
-  } */
   .boba-columns-container {
     margin-left: 22%;
     margin-right: 26%;
@@ -174,11 +171,7 @@ img {
   }
 }
 
-
 @media screen and (max-width: 55rem) {
-  /* .boba-title p {
-    color: brown;
-  } */
   .boba-columns-container {
     margin-left: 10%;
     margin-right: 16%;
@@ -196,7 +189,6 @@ img {
     margin: -80px 0 -50px 0;
   }
   .boba-title p {
-    /* color: orange; */
     font-size: 140px;
     line-height: 50px;
   }
@@ -261,14 +253,11 @@ img {
   }
 }
 
-
+/* intermediate screen size */
 @media screen and (max-width: 45rem) {
   .boba-title {
     margin: -80px 0 -50px 0;
   }
-  /* .boba-title p {
-    color: blanchedalmond;
-  } */
   .boba-columns-container {
     margin-bottom: -180px;
   }
@@ -278,12 +267,10 @@ img {
   .image {
    width: 580px;
   }
-  
   .dark-end {
     margin: -50px 0 0 0;
   }
 }
-
 
 /* Surface Duo */
 @media screen and (max-width: 40rem) {
@@ -291,7 +278,6 @@ img {
     margin: -80px 0 -50px 0;
   }
   .boba-title p {
-    /* color: purple; */
     font-size: 100px;
     line-height: 10px;
   }
@@ -338,18 +324,33 @@ img {
   }
 }
 
-/* XR, S20, A51/71 */
+/* iphone 12 pro max, iphone 13 pro max */
+@media screen and (max-width: 428px) and (device-height : 926px)  {
+  .boba-columns-container {
+    margin-bottom: -370px;
+  }
+  .boba-column-about {
+    margin-top: -290px;
+  }
+  .image {
+    width: 380px;
+   }
+  .dark-end {
+    margin: -165px 0 0 0;
+  }
+}
+
+/* iPhone 11, XR, S20, A51/71 */
 @media screen and (max-width: 26rem) {
   .boba-title {
     margin: -80px 0 -80px 0;
   }
   .boba-title p {
-    /* color: pink; */
     font-size: 90px;
     line-height: 0;
   }
   .boba-columns-container {
-    margin-bottom: -380px;
+    margin-bottom: -280px;
   }
   .boba-column-about {
     margin-top: -260px;
@@ -364,21 +365,49 @@ img {
     margin-top: 170px;
   }
   .dark-end {
-    margin: -200px 0 0 0;
+    margin: -170px 0 0 0;
   }
 }
 
+/* iphone 8 plus */
+@media screen and (max-width: 26rem) and (device-height : 736px)  {
+  .boba-title {
+    margin: -80px 0 -80px 0;
+  }
+  .boba-title p {
+    font-size: 90px;
+    line-height: 0;
+  }
+  .boba-columns-container {
+    margin-bottom: -100px;
+  }
+  .boba-column-about {
+    margin-top: 10px;
+  }
+  .image {
+   width: 360px;
+  }
+  .right-arrow {
+    margin-top: 170px;
+  }
+  .left-arrow {
+    margin-top: 170px;
+  }
+  .dark-end {
+    margin: -115px 0 0 0;
+  }
+}
 
-/* 12 Pro, Pixel 5 */
+/* 13, 13 Pro, 12, 12 Pro, Pixel 5 */
 @media screen and (max-width: 25rem) {
   .boba-title {
     margin: -80px 0 -80px 0;
   }
   .boba-columns-container {
-    margin-bottom: -280px;
+    margin-bottom: -190px;
   }
   .boba-column-about {
-    margin-top: -250px;
+    margin-top: 10px;
   }
   .right-arrow {
     margin-top: 160px;
@@ -387,21 +416,20 @@ img {
     margin-top: 160px;
   }
   .dark-end {
-    margin: -200px 0px -50px 0px;
+    margin: -150px 0px 0px 0px;
   }
 }
 
-/* SE, Samsung 8+ */
+/* SE */
 @media screen and (max-width: 24rem) {
   .boba-title {
     margin: -80px 0 -80px 0;
   }
   .boba-title p {
-    /* color: black; */
     font-size: 80px;
   }
   .boba-columns-container {
-    margin-bottom: -60px;
+    margin-bottom: 60px;
   }
   .boba-column-about {
     margin-top: 20px;
@@ -423,3 +451,83 @@ img {
     margin: -110px 0 0 0;
   }
 }
+
+/* iphones */
+@media screen and (max-width: 375px) and (device-height : 812px)  {
+  .boba-title {
+    margin: -80px 0 -80px 0;
+  }
+  .boba-columns-container {
+    margin-bottom: -130px;
+  }
+  .boba-column-about {
+    margin-top: 10px;
+  }
+  .right-arrow {
+    margin-top: 160px;
+  }
+  .left-arrow {
+    margin-top: 160px;
+  }
+  .dark-end {
+    margin: -150px 0px 0px 0px;
+  }
+}
+
+/* Samsung 8+ */
+@media screen and (max-width: 23rem) {
+  .boba-columns-container {
+    margin-bottom: -25px;
+  }
+  .dark-end {
+    margin: -140px 0 0 0;
+  } 
+}
+
+/* Galaxy fold */
+@media screen and (max-width: 22rem)  {
+  .boba-title p{
+    font-size: 65px;
+  }
+  .boba-columns-container {
+    margin-bottom: 180px;
+  }
+
+  .boba-column-language p {
+    font-size: 16px;
+  }
+  .boba-language li {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .boba-column-about p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  .boba-description p {
+    font-size: 16px;
+  }
+  .image {
+   width: 250px;
+  }
+  .right-arrow {
+    margin-top: 140px;
+    right: 100px;
+    font-size: 1.0rem;
+  }
+  .left-arrow {
+    margin-top: 140px;
+    left: 100px;
+    font-size: 1.0rem;
+  }
+  .dark-end {
+    font-size: 33px;
+    line-height: 44px;
+    margin: -110px 0 0 0;
+  } 
+  .dark-link {
+    font-size: 15px;
+  }
+}
+
+

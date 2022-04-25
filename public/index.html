@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
@@ -63,12 +63,27 @@
         }
       }
 
+      /* iphone 12 pro max, iphone 13 pro max */
+      @media screen and (max-width: 428px) and (device-height : 926px)  {
+        .loader{
+          top: 39%;
+          left: 32%;
+        }
+      }
+
       /* XR, S20, A51/71 */
       @media screen and (max-width: 26rem) {
         .loader{
           top: 40%;
           left: 32%;
-          transform: translate(-50%, -50%);
+        }
+      }
+
+      /* iphone 8 plus */
+      @media screen and (max-width: 26rem) and (device-height : 736px)  {
+        .loader{
+          top: 37%;
+          left: 31%;
         }
       }
 
@@ -77,16 +92,32 @@
         .loader{
           top: 40%;
           left: 30%;
-          transform: translate(-50%, -50%);
         }
       }
 
-      /* SE, Samsung 8+ */
-      @media screen and (max-width: 25rem) {
+      /* SE */
+      @media screen and (max-width: 24rem) {
         .loader{
           top: 37%;
           left: 29%;
-          transform: translate(-50%, -50%);
+        }
+      }
+
+      /* Samsung S8+ */
+      @media screen and (max-width: 23rem) {
+        .loader{
+          top: 37%;
+          left: 28%;
+        }
+      }
+
+      /* Galaxy Fold */
+      @media screen and (max-width: 22rem) {
+        .loader{
+          width: 100px;
+          height: 100px;
+          top: 36%;
+          left: 27%;
         }
       }
 
