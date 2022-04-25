@@ -71,7 +71,7 @@ class About extends React.Component {
           <div className="intro">
             <p>
               Inner width {windowWidthin} Inner Height {windowHeightin}
-              Outer width {windowWidthin} Outer Height {windowHeightin}
+              Outer width {windowWidthout} Outer Height {windowHeightout}
               Hello! Thank you for stopping by my page to learn more about me.
               I'm Johana, a first generation college graduate from the
               University of California, Santa Cruz. I obtained a B.S. in

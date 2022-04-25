@@ -191,7 +191,6 @@ img {
     margin: -80px 0 -50px 0;
   }
   .boba-title p {
-    color: aqua;
     font-size: 140px;
     line-height: 50px;
   }
@@ -235,8 +234,8 @@ img {
   .image {
    width: 650px;
    border-radius: 50px;
-   /* overflow: hidden;
-   perspective: 1px; */
+   overflow: hidden;
+   perspective: 1px;
   }
   .right-arrow {
     right: 50px;
@@ -378,7 +377,6 @@ img {
     margin: -80px 0 -80px 0;
   }
   .boba-title p {
-    color: pink;
     font-size: 90px;
     line-height: 0;
   }
