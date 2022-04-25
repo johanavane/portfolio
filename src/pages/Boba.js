@@ -27,13 +27,6 @@ function Boba() {
   }
   return (
     <div class="boba-container">
-      <head>
-        <meta
-          charset="utf-8"
-          name="viewport"
-          content="width=device-width, initial-scale=1.0"
-        />
-      </head>
       <div class="boba-layer">
         <div class="boba-title">
           <p class="one">Boba </p>
