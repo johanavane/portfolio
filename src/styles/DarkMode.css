@@ -259,20 +259,26 @@
 /* iphone 12 pro max, iphone 13 pro max */
 @media screen and (max-width: 428px) and (device-height : 926px)  {
   .column-about {
-    margin-top: -300px;
+    margin-top: -225px;
   }
   .columns-container {
-    margin-bottom: -525px;
+    margin-bottom: -360px;
   }
   .project-video{
-    margin-bottom: 45px;
+    margin-bottom: 30px;
+  }
+  .project-video video{
+    width: 90%;
+  }
+  .boba-end{
+    margin: -70px 0 -20px 0;
   }
   
 }
 
 
-/* iPhone 11 XR, S20, A51/71 */
-@media screen and (max-width: 26rem) {
+/* iPhone 11, 11 Pro Max, XR, S20, A51/71 */
+@media screen and (max-width: 414px) and (device-height : 896px)  {
   .title {
     margin: -80px 0 -80px 0;
   }
@@ -282,92 +288,134 @@
     line-height: 0;
   }
   .columns-container {
-    margin-bottom: -380px;
+    margin-bottom: 150px;
   }
   .column-about {
-    margin-top: -285px;
+    margin-top: -215px;
   }
   .project-video{
     margin-top: -450px;
   }
+  .project-video video{
+    width: 90%;
+  }
   .boba-end {
-    margin: -150px 0 0 0;
+    margin: -120px 0 -15px 0;
   }
 }
 
 
 /* iphone 8 plus */
-@media screen and (max-width: 26rem) and (device-height : 736px)  {
+@media screen and (max-width: 414px) and (device-height : 736px)  {
   .column-about {
-    margin-top: -220px;
+    margin-top: -160px;
   }
   .columns-container {
-    margin-bottom: 115px;
+    margin-bottom: 60px;
+  }
+  .project-video video{
+    width: 90%;
+  }
+  .boba-end {
+    margin: -120px 0 -15px 0;
   }
 }
 
 
 
 /* 13, 13 Pro, 12, 12 Pro, Pixel 5 */
-@media screen and (max-width: 25rem) {
+@media screen and (max-width: 390px) and (device-height : 844px)  {
   .title {
     margin: -80px 0 -80px 0;
   }
   .columns-container {
-    margin-bottom: -280px;
+    margin-bottom: 160px;
   }
   .column-about {
-    margin-top: -270px;
+    margin-top: -190px;
   }
   .project-video{
     margin-top: -430px;
   }
+  .project-video video{
+    width: 90%;
+  }
   .boba-end {
-    margin: -150px 0px -50px 0px;
+    margin: -150px 0px 0px 0px;
   }
 }
 
-/* SE */
-@media screen and (max-width: 24rem) {
+/* iPhone 11 Pro, 11 X, 13 Mini, 12 Mini, X, XS */
+@media screen and (max-width: 375px) and (device-height : 812px)  {
+  .title {
+    margin: -80px 0 -80px 0;
+  }
+  .title p{
+    font-size: 90px;
+  }
+  .columns-container {
+    margin-bottom: 195px;
+  }
+  .column-about {
+    margin-top: -165px;
+  }
+  .project-video{
+    margin-top: -430px;
+  }
+  .project-video video{
+    width: 90%;
+  }
+  .boba-end {
+    margin: -150px 0px 0px 0px;
+  }
+}
+
+
+/* SE + 7, 8 */
+@media screen and (max-width: 375px) and (device-height : 667px)  {
   .title {
     margin: -80px 0 -80px 0;
   }
   .title p {
-    /* color: black; */
     font-size: 80px;
   }
   .columns-container {
-    margin-bottom: -250px;
+    margin-bottom: 70px;
   }
   .column-about {
-    margin-top: -180px;
+    margin-top: -130px;
   }
   .project-video{
     margin-top: -220px;
     margin-bottom: 40px;
   }
+  .project-video video{
+    width: 90%;
+  }
   .boba-end {
-    margin: -110px 0 0 0;
+    margin: -115px 0 -25px 0;
   }
 
 
 }/* Samsung 8+ */
 @media screen and (max-width: 23rem) {
   .columns-container {
-    margin-bottom: -330px;
+    margin-bottom: 30px;
   }
   .column-about {
-    margin-top: -215px;
+    margin-top: -160px;
   }
   .project-video{
     /* margin-top: -220px; */
     margin-bottom: 40px;
   }
+  .project-video video{
+    width: 90%;
+  }
   .boba-end {
-    margin: -110px 0 0 0;
+    margin: -120px 0 -25px 0;
   }
 }
-
 
 
 /* Galaxy fold */

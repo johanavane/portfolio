@@ -39,8 +39,16 @@ function DarkMode() {
           </div>
         </div>
         <div class="project-video">
-          <video autoPlay loop muted width="850" height="500">
-            <source src="darkmode_demo.mov" type="video/mp4" />
+          <video
+            autoPlay
+            loop
+            muted
+            webkit-playsinline
+            playsinline
+            width="850"
+            height="500"
+          >
+            <source src="demo_chrome.mov" type="video/mp4" />
           </video>
           <script>document.getElementById('vid').play();</script>
         </div>
