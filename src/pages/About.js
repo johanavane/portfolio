@@ -11,40 +11,31 @@ class About extends React.Component {
   state = {
     img: "hiking.jpg",
   };
-  constructor(props) {
-    super(props);
-    this.stateih = { windowHeightin: window.innerHeight };
-    this.stateiw = { windowWidthin: window.innerWidth };
-    this.stateoh = { windowHeightout: window.outerHeight };
-    this.stateow = { windowWidthout: window.outerWidth };
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.handleResize);
-  }
-
-  componentWillUnmount() {
-    window.addEventListener("resize", this.handleResize);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.stateih = { windowHeightin: window.innerHeight };
+  //   this.stateiw = { windowWidthin: window.innerWidth };
+  // }
+  // componentDidMount() {
+  //   window.addEventListener("resize", this.handleResize);
+  // }
+  // componentWillUnmount() {
+  //   window.addEventListener("resize", this.handleResize);
+  // }
 
   render() {
-    const handleResize = (e) => {
-      this.setState({ windowHeightin: window.innerHeight });
-      this.setState({ windowWidthin: window.innerWidth });
-      this.setState({ windowHeightout: window.outerHeight });
-      this.setState({ windowWidthout: window.outerWidth });
-    };
-    const { windowHeightin } = this.stateih;
-    const { windowWidthin } = this.stateiw;
-    const { windowHeightout } = this.stateoh;
-    const { windowWidthout } = this.stateow;
+    // const handleResize = (e) => {
+    //   this.setState({ windowHeightin: window.innerHeight });
+    //   this.setState({ windowWidthin: window.innerWidth });
+    // };
+    // const { windowHeightin } = this.stateih;
+    // const { windowWidthin } = this.stateiw;
     return (
       <div class="flexbox-container">
         <div class="grid-photo">
           <div class="portrait">
             <img src="selfphoto2.png" />
             {/* <img src="hiking.jpg" class="upper-image" /> */}
-
             {/* <img
               src={this.state.img}
               onMouseEnter={() => {
@@ -70,8 +61,6 @@ class About extends React.Component {
           </div>
           <div className="intro">
             <p>
-              Inner width {windowWidthin} Inner Height {windowHeightin}
-              Outer width {windowWidthout} Outer Height {windowHeightout}
               Hello! Thank you for stopping by my page to learn more about me.
               I'm Johana, a first generation college graduate from the
               University of California, Santa Cruz. I obtained a B.S. in
@@ -111,10 +100,6 @@ class About extends React.Component {
             </p>
           </div>
         </div>
-        {/* <div class="grid-four">
-          <a href="mailto:johanavmar27@gmail.com">Email</a>
-          <a href="https://www.instagram.com/bbyxjamz/">Instagram</a>
-        </div> */}
       </div>
     );
   }
