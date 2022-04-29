@@ -64,14 +64,14 @@ class About extends React.Component {
               Hello! Thank you for stopping by my page to learn more about me.
               I'm Johana, a first generation college graduate from the
               University of California, Santa Cruz. I obtained a B.S. in
-              Computer Science and I am currently interested in job
-              opportunities in Web Development.
+              Computer Science and I'm currently interested in job opportunities
+              in Web Development.
             </p>
             <p>
               Outside of coding I enjoy thrifting, running, watching comedy tv
               shows and hiking. I've hiked many beautiful places including Zion
-              National Park, which is known for many challenging trails like
-              Angel's Landing trail. It was my favorite trail to hike by far,
+              National Park, which is known for it's many challenging trails
+              like Angel's Landing. It was my favorite trail to hike by far,
               although the trail was challenging and I had to wake up at 4 am to
               avoid big crowds; the views were beautiful and definitely worth
               it!
@@ -79,7 +79,7 @@ class About extends React.Component {
             <p>
               If you would like to connect with me about any work opportunities,
               you can reach me at any of the links I have below and you can also
-              check out my <a> resume </a>
+              check out my <a class="resume"> resume </a>
               <a href={Pdf} target="_blank">
                 here
               </a>
