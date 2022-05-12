@@ -88,7 +88,7 @@ class About extends React.Component {
           </div>
           <div class="icon-links">
             <p>
-              <a href="mailto:johanavmar27@gmail.com">
+              <a href="mailto:johanamalv@gmail.com">
                 <GrMail />
               </a>
               <a
