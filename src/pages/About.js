@@ -11,31 +11,31 @@ class About extends React.Component {
   state = {
     img: "hiking.jpg",
   };
-  constructor(props) {
-    super(props);
-    this.state = { windowHeight: window.innerHeight };
-  }
-
-  componentDidMount() {
-    window.addEventListener("resize", this.handleResize);
-  }
-
-  componentWillUnmount() {
-    window.addEventListener("resize", this.handleResize);
-  }
+  // constructor(props) {
+  //   super(props);
+  //   this.stateih = { windowHeightin: window.innerHeight };
+  //   this.stateiw = { windowWidthin: window.innerWidth };
+  // }
+  // componentDidMount() {
+  //   window.addEventListener("resize", this.handleResize);
+  // }
+  // componentWillUnmount() {
+  //   window.addEventListener("resize", this.handleResize);
+  // }
 
   render() {
-    const handleResize = (e) => {
-      this.setState({ windowHeight: window.innerHeight });
-    };
-    const { windowHeight } = this.state;
+    // const handleResize = (e) => {
+    //   this.setState({ windowHeightin: window.innerHeight });
+    //   this.setState({ windowWidthin: window.innerWidth });
+    // };
+    // const { windowHeightin } = this.stateih;
+    // const { windowWidthin } = this.stateiw;
     return (
       <div class="flexbox-container">
         <div class="grid-photo">
           <div class="portrait">
             <img src="selfphoto2.png" />
             {/* <img src="hiking.jpg" class="upper-image" /> */}
-
             {/* <img
               src={this.state.img}
               onMouseEnter={() => {
@@ -61,17 +61,17 @@ class About extends React.Component {
           </div>
           <div className="intro">
             <p>
-              Hello! Thank you for stopping by my page to learn more about me. I
-              am Johana, a first generation college graduate from the University
-              of California, Santa Cruz. I obtained a B.S. in Computer Science
-              and I am currently interested in job opportunities in Web
-              Development.
+              Hello! Thank you for stopping by my page to learn more about me.
+              I'm Johana, a first generation college graduate from the
+              University of California, Santa Cruz. I obtained a B.S. in
+              Computer Science and I'm currently interested in job opportunities
+              in Web Development.
             </p>
             <p>
               Outside of coding I enjoy thrifting, running, watching comedy tv
               shows and hiking. I've hiked many beautiful places including Zion
-              National Park, which is known for many challenging trails like
-              Angel's Landing trail. It was my favorite trail to hike by far,
+              National Park, which is known for it's many challenging trails
+              like Angel's Landing. It was my favorite trail to hike by far,
               although the trail was challenging and I had to wake up at 4 am to
               avoid big crowds; the views were beautiful and definitely worth
               it!
@@ -79,7 +79,7 @@ class About extends React.Component {
             <p>
               If you would like to connect with me about any work opportunities,
               you can reach me at any of the links I have below and you can also
-              check out my <a> resume </a>
+              check out my <a class="resume"> resume </a>
               <a href={Pdf} target="_blank">
                 here
               </a>
@@ -88,7 +88,7 @@ class About extends React.Component {
           </div>
           <div class="icon-links">
             <p>
-              <a href="mailto:johanavmar27@gmail.com">
+              <a href="mailto:johanamalv@gmail.com">
                 <GrMail />
               </a>
               <a
@@ -100,10 +100,6 @@ class About extends React.Component {
             </p>
           </div>
         </div>
-        {/* <div class="grid-four">
-          <a href="mailto:johanavmar27@gmail.com">Email</a>
-          <a href="https://www.instagram.com/bbyxjamz/">Instagram</a>
-        </div> */}
       </div>
     );
   }

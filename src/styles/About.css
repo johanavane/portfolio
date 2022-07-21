@@ -80,6 +80,10 @@ text-align: center;
 .location a {
   color: #7fa667;
 }
+.resume{
+  font-weight: bold;
+}
+
 
 /* @media (max-width: 800px) { */
 @media screen and (max-width: 75rem){

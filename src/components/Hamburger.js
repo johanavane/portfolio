@@ -67,10 +67,14 @@ function Hamburger({ state }) {
                 </span>
               </li>
               <li>
-                <Link to="/about">About</Link>
+                <span>
+                  <Link to="/about">About</Link>
+                </span>
               </li>
               <li>
-                <Link to="/boba">Work</Link>
+                <span>
+                  <Link to="/boba">Work</Link>
+                </span>
               </li>
             </ul>
           </nav>
