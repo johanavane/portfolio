@@ -6,7 +6,7 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import DarkMode from "./pages/DarkMode";
 import Boba from "./pages/Boba";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { HashRouter, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
   state = {
@@ -34,7 +34,7 @@ class App extends React.Component {
 
     return (
       <>
-        <Router>
+        <HashRouter>
           <Navbar />
           <Switch>
             <Route path="/" exact component={Home} />
@@ -43,7 +43,7 @@ class App extends React.Component {
             <Route path="/DarkMode" exact component={DarkMode} />
             <Route path="/Boba" exact component={Boba} />
           </Switch>
-        </Router>
+        </HashRouter>
       </>
     );
   }
