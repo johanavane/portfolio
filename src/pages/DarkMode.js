@@ -52,12 +52,12 @@ function DarkMode() {
           </video>
           <script>document.getElementById('vid').play();</script>
         </div>
-        <div class="boba-end">
-          <div class="boba-next">
-            <Link to="/Boba">Next Project</Link>
+        <div class="store-end">
+          <div class="store-next">
+            <Link to="/Store">Next Project</Link>
           </div>
-          <div class="boba-link">
-            <Link to="/Boba">BobaTracker</Link>
+          <div class="store-link">
+            <Link to="/Store">OnlineStore</Link>
           </div>
         </div>
       </div>

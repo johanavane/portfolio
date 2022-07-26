@@ -1,4 +1,4 @@
-export const SliderData = [
+export const BobaImages = [
   {
     image: "LogIn.png",
   },

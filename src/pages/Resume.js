@@ -1,22 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "../styles/Resume.css";
+import React, { useState, useEffect } from "react";
 
 function Resume() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    console.log(`You have clicked the button ${count} times`);
+  }, []);
+
   return (
-    <div class="resume-container">
-      <div class="resume-layer">
-        <div class="resume-links">
-          <nav>
-            <li>
-              <Link to="/DarkMode">Dark Mode</Link>
-            </li>
-            <li>
-              <Link to="/Boba">Boba Tracker</Link>
-            </li>
-          </nav>
-        </div>
-      </div>
+    <div>
+      <button onClick={() => setCount(count + 1)}>Click me</button>
     </div>
   );
 }

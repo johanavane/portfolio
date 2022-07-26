@@ -6,6 +6,7 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import DarkMode from "./pages/DarkMode";
 import Boba from "./pages/Boba";
+import Store from "./pages/Store";
 import { HashRouter, Switch, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -42,6 +43,7 @@ class App extends React.Component {
             <Route path="/Resume" exact component={Resume} />
             <Route path="/DarkMode" exact component={DarkMode} />
             <Route path="/Boba" exact component={Boba} />
+            <Route path="/Store" exact component={Store} />
           </Switch>
         </HashRouter>
       </>
