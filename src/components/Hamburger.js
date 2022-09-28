@@ -78,7 +78,7 @@ function Hamburger({ state }) {
               </li>
               <li>
                 <span>
-                  <Link to="/dark">DarkMode</Link>
+                  <Link to="/darkmode">DarkMode</Link>
                 </span>
               </li>
             </ul>
