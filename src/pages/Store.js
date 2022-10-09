@@ -24,7 +24,7 @@ function Store() {
     <div class="store-container">
       <div class="store-layer">
         <div class="store-title">
-          <p class="one">Online </p>
+          <p class="one">Fake </p>
           <p class="two">Store</p>
         </div>
         <div class="store-columns-container">
