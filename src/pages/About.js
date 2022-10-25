@@ -91,10 +91,7 @@ class About extends React.Component {
               <a href="mailto:johanamalv@gmail.com">
                 <GrMail />
               </a>
-              <a
-                href="https://www.linkedin.com/in/johana-martinez-alvarado-2bb9221a2"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/johana-ma/" target="_blank">
                 <GrLinkedin />
               </a>
             </p>
