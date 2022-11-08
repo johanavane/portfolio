@@ -2,7 +2,8 @@
 .flexbox-container {
   /* changing this from 100vh to 100% changes the height of the box */
   /* position: relative; */
-  height: 98vh;
+  /* height: 98vh; */
+  height: calc(98vh - 50px);
   display: flex;
   gap: 10%;
   /* flex-wrap: wrap; */
@@ -45,6 +46,7 @@
   margin: auto;
   grid-column: 2;
   grid-row: 1/2;
+  margin-right: 15vmin;
 }
 
 .icon-links a {

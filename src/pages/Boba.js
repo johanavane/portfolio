@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Boba.css";
-import { SliderData } from "../components/SliderData.js";
+import { BobaImages } from "../components/BobaImages.js";
 import {
   FaArrowAltCircleRight,
   FaArrowAltCircleLeft,
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa";
 
 function Boba() {
-  const slides = SliderData;
+  const slides = BobaImages;
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -71,16 +71,12 @@ function Boba() {
               entries, in addition I connected the drink form to the database
               and made changes to the UI for the Login Page and Register Page.
             </p>
-            <p>
-              Although the project is no longer being hosted I have included
-              images of the project below.
-            </p>
           </div>
         </div>
         <section class="slider">
           <FaArrowLeft class="left-arrow" onClick={prevSlide} />
           <FaArrowRight class="right-arrow" onClick={nextSlide} />
-          {SliderData.map((slide, index) => {
+          {BobaImages.map((slide, index) => {
             return (
               <div
                 className={index === current ? "slide active" : "slide"}

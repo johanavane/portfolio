@@ -3,7 +3,7 @@ import "../styles/About.css";
 import * as FaIcons from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { GrLinkedin } from "react-icons/gr";
-import Pdf from "../pdf/JohanaMartinezResume.pdf";
+import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 
 // import { IconName } from "react-icons/fa";
 
@@ -91,10 +91,7 @@ class About extends React.Component {
               <a href="mailto:johanamalv@gmail.com">
                 <GrMail />
               </a>
-              <a
-                href="https://www.linkedin.com/in/johana-martinez-alvarado-2bb9221a2"
-                target="_blank"
-              >
+              <a href="https://www.linkedin.com/in/johana-ma/" target="_blank">
                 <GrLinkedin />
               </a>
             </p>

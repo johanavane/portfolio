@@ -9,30 +9,36 @@ chnages made here will only affect navbar at top of page
 
 @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap");
 
+
 .container {
   padding: 0 60px;
   position: relative;
   z-index: 10;
-  height: 50px;
+  height: 20px;
   display: flex;
-  float: right;
+  justify-content: space-between;
 }
 
-/* for menu button */
-button {
+
+.logo a, .navMenu button{
+  color: black;
+  font-size: 20px;
+  font-family: "Gayathri", sans-serif;
+}
+
+.navMenu button {
   border: none;
   background: none;
   outline: none;
   cursor: pointer;
-  font-size: 20px;
-  font-family: "Gayathri", sans-serif;
-  /* mix-blend-mode: difference; */
-  /* color: #23d5ab; */
-  color: black;
+}
+
+.logo a {
+  text-decoration: none;
 }
 
 @media (max-width: 43rem) {
   .container {
     padding: 0 10px;
   }
-}
+} 

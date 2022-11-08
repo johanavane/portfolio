@@ -78,21 +78,21 @@
   line-height: 29px;
 }
 
-.boba-end {
+.store-end {
   font-size: 60px;
   font-weight: 400;
   line-height: 75px;
   text-align: center;
   margin-top: 100px;
 }
-.boba-end a {
+.store-end a {
   text-decoration: none;
   color: #42682f;
 }
-.boba-next {
+.store-next {
   font-weight: bold;
 }
-.boba-link {
+.store-link {
   font-size: 20px;
   margin-bottom: 60px;
   font-weight: bold;
@@ -172,12 +172,12 @@
   .project-video{
     margin-top: -70px;
   }
-  .boba-end {
+  .store-end {
     font-size: 40px;
     line-height: 48px;
     margin: 80px 0 0 0;
   }
-  .boba-link {
+  .store-link {
     font-size: 18px;
   }
 }
@@ -201,7 +201,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -50px 0 0 0;
   }
 }
@@ -238,12 +238,12 @@
   .project-video{
     margin-top: -250px;
   }
-  .boba-end {
+  .store-end {
     font-size: 36px;
     line-height: 45px;
     margin: -50px 0 0 0;
   }
-  .boba-link {
+  .store-link {
     font-size: 16px;
   }
 }
@@ -262,7 +262,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end{
+  .store-end{
     margin: -70px 0 -20px 0;
   }
   
@@ -289,7 +289,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -120px 0 -15px 0;
   }
 }
@@ -306,7 +306,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -120px 0 -15px 0;
   }
 }
@@ -328,7 +328,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -150px 0px 0px 0px;
   }
 }
@@ -353,7 +353,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -150px 0px 0px 0px;
   }
 }
@@ -379,7 +379,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -115px 0 -25px 0;
   }
 }
@@ -399,7 +399,7 @@
   .project-video video{
     width: 90%;
   }
-  .boba-end {
+  .store-end {
     margin: -120px 0 -25px 0;
   }
 }
@@ -415,7 +415,7 @@
   .project-video{
     margin-bottom: 40px;
   }
-  .boba-end {
+  .store-end {
     margin: -150px 0 0 0;
   }
 }

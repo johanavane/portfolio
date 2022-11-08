@@ -11,6 +11,7 @@ function Navbar({ history }) {
     initial: false,
     clicked: null,
     menuName: "MENU",
+    menuHome: "",
   });
 
   // State of our button
@@ -20,7 +21,7 @@ function Navbar({ history }) {
   useEffect(() => {
     // Listen for page chnages
     history.listen(() => {
-      setState({ clicked: false, menuName: "Menu" });
+      setState({ clicked: false, menuName: "Menu", menuHome: "" });
     });
   });
 
@@ -31,16 +32,19 @@ function Navbar({ history }) {
         initial: null,
         clicked: true,
         menuName: "Exit",
+        menuHome: "Home",
       });
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
         menuName: "Menu",
+        menuHome: "",
       });
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
         menuName: "Exit",
+        menuHome: "Home",
       });
     }
   };
@@ -56,14 +60,14 @@ function Navbar({ history }) {
   return (
     <header>
       <div className="container">
-        {/* <div class="logo-home">
-          <a href="/">J - M</a>
-        </div> */}
-        <button disabled={disabled} onClick={handleMenu}>
-          {/* <FaIcons.FaBars /> */}
-          {/* <FcDatabase /> */}
-          {state.menuName}
-        </button>
+        <div className="logo">
+          <Link to="/">{state.menuHome}</Link>
+        </div>
+        <div className="navMenu">
+          <button disabled={disabled} onClick={handleMenu}>
+            {state.menuName}
+          </button>
+        </div>
       </div>
       <Hamburger state={state} />
     </header>
