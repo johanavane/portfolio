@@ -1,8 +1,5 @@
 export const StoreImages = [
   {
-    image: "storeHome.png",
-  },
-  {
     image: "storeWomens.png",
   },
   {
@@ -22,5 +19,8 @@ export const StoreImages = [
   },
   {
     image: "storeSignUp.png",
+  },
+  {
+    image: "storeHome.png",
   },
 ];

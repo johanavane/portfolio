@@ -3,7 +3,7 @@ import "../styles/About.css";
 import * as FaIcons from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { GrLinkedin } from "react-icons/gr";
-import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
+import Pdf from "../pdf/JohanaMartinezResume.pdf";
 
 // import { IconName } from "react-icons/fa";
 
