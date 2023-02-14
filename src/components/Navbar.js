@@ -1,6 +1,4 @@
 import React, { useState, useEffect } from "react";
-import * as FaIcons from "react-icons/fa";
-import { FcDatabase } from "react-icons/fc";
 import { withRouter, Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
 import "../styles/Navbar.css";
@@ -47,14 +45,6 @@ function Navbar({ history }) {
         menuHome: "Home",
       });
     }
-  };
-
-  //Determine if out menu button should be disabled
-  const disableMenu = () => {
-    setDisabled(!disabled);
-    setTimeout(() => {
-      setDisabled(false);
-    }, 1200);
   };
 
   return (

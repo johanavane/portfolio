@@ -11,7 +11,6 @@
   width: 100%;
 }
 
-/*  vertical and horizontal centering of links */
 .menu-links {
   position: relative;
   top: 50%;
@@ -26,15 +25,10 @@
   height: 100%;
 }
 
-/* text align: moves links to center of page
-if not here then links positioned at left side of page */
 nav {
-  /* commenting out bc i dont know what dispaly block does */
-  /* display: block; */
   text-align: center;
 }
 
-/* stylyng of the 3 links */
 .menu-links li {
   list-style: none;
   font-size: 15vmin;
@@ -43,7 +37,6 @@ nav {
   margin-right: 45px;
 }
 
-/* link text = white, there is no line under links */
 .menu-links a {
   color: white;
   text-decoration: none;
@@ -88,7 +81,7 @@ span:hover:after {
   transition: 0s;
 }
 
-/* rules here apply to devices from 0px to 43rem (inclusive) */
+/* rules here apply to devices from 0px to 43rem */
 @media (max-width: 43rem) {
   .menu-links li {
     list-style: none;

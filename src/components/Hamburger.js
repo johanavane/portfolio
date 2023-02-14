@@ -42,9 +42,6 @@ function Hamburger({ state }) {
         duration: 0.8,
         height: 0,
         // following makes page come in sideways
-        // instead of top to bottom
-        // transformOrigin: "right top",
-        // skewY: 2,
         ease: "power3.inOut",
         stagger: {
           amount: 0.1,
@@ -58,7 +55,6 @@ function Hamburger({ state }) {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menu-links">
-          {/* nav tag used for navigation links */}
           <nav>
             <ul>
               <li>

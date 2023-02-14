@@ -1,14 +1,4 @@
-/* style sheet for navbar
-chnages made here will only affect navbar at top of page
-*/
-
-/* .container {
-  width: 1280px;
-  min-width: 1280px;
-} */
-
 @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap");
-
 
 .container {
   padding: 0 60px;
@@ -18,7 +8,6 @@ chnages made here will only affect navbar at top of page
   display: flex;
   justify-content: space-between;
 }
-
 
 .logo a, .navMenu button{
   color: black;

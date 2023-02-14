@@ -24,12 +24,12 @@ function Store() {
     <div class="store-container">
       <div class="store-layer">
         <div class="store-title">
-          <p class="one">Clothing </p>
-          <p class="two">Store</p>
+          <p class="title-one">Clothing </p>
+          <p class="title-two">Store</p>
         </div>
         <div class="store-columns-container">
           <div class="store-column-language">
-            <div class="vane">
+            <div class="store-skills">
               <p>Languages</p>
               <ul class="store-language">
                 <li>HTML</li>
@@ -37,7 +37,7 @@ function Store() {
                 <li>JavaScript</li>
               </ul>
             </div>
-            <div class="vane">
+            <div class="store-skills">
               <p>Library</p>
               <ul class="store-language">
                 <li>React.js</li>

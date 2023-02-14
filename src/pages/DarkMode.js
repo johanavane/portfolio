@@ -7,13 +7,12 @@ function DarkMode() {
     <div class="darkmode-container">
       <div class="darkmode-layer">
         <div class="title">
-          <p class="one">Dark </p>
-          <p class="two">Mode</p>
-          {/* <hr /> */}
+          <p class="title-one">Dark </p>
+          <p class="title-two">Mode</p>
         </div>
         <div class="columns-container">
           <div class="column-language">
-            <div class="vane">
+            <div class="dark-skills">
               <p>Languages</p>
               <ul class="language">
                 <li>HTML</li>

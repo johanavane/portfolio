@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import Resume from "./pages/Resume";
 import DarkMode from "./pages/DarkMode";
 import Boba from "./pages/Boba";
 import Store from "./pages/Store";
@@ -40,7 +39,6 @@ class App extends React.Component {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/About" exact component={About} />
-            <Route path="/Resume" exact component={Resume} />
             <Route path="/DarkMode" exact component={DarkMode} />
             <Route path="/Boba" exact component={Boba} />
             <Route path="/Store" exact component={Store} />

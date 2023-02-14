@@ -2,12 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Boba.css";
 import { BobaImages } from "../components/BobaImages.js";
-import {
-  FaArrowAltCircleRight,
-  FaArrowAltCircleLeft,
-  FaArrowRight,
-  FaArrowLeft,
-} from "react-icons/fa";
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 function Boba() {
   const slides = BobaImages;
@@ -29,12 +24,12 @@ function Boba() {
     <div class="boba-container">
       <div class="boba-layer">
         <div class="boba-title">
-          <p class="one">Boba </p>
-          <p class="two">Tracker</p>
+          <p class="title-one">Boba</p>
+          <p class="title-two">Tracker</p>
         </div>
         <div class="boba-columns-container">
           <div class="boba-column-language">
-            <div class="vane">
+            <div class="boba-skills">
               <p>Languages</p>
               <ul class="boba-language">
                 <li>HTML</li>
@@ -42,7 +37,7 @@ function Boba() {
                 <li>JavaScript</li>
               </ul>
             </div>
-            <div class="vane">
+            <div class="boba-skills">
               <p>Library</p>
               <ul class="boba-language">
                 <li>React.js</li>
