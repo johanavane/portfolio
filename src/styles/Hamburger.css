@@ -44,13 +44,13 @@ nav {
   overflow: hidden;
 }
 
-span {
+.menu-links span {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-span:before, span:after {
+.menu-links span:before, .menu-links span:after {
   content: '';
   position: absolute;
   width: 0%;
@@ -60,22 +60,22 @@ span:before, span:after {
   background: #42682f;
 }
 
-span:before {
+.menu-links span:before {
   left: -2.5px;
 }
-span:after {
+.menu-links span:after {
   right: 2.5px;
   background:#fff;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:before {
+.menu-links span:hover:before {
   background: #fff;
   width: 100%;
   transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-span:hover:after {
+.menu-links span:hover:after {
   background: transparent;
   width: 100%;
   transition: 0s;
