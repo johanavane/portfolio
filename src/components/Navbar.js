@@ -9,7 +9,7 @@ function Navbar({ history }) {
     initial: false,
     clicked: null,
     menuName: "MENU",
-    menuHome: "",
+    menuHome: "HOME",
   });
 
   // State of our button
@@ -19,7 +19,7 @@ function Navbar({ history }) {
   useEffect(() => {
     // Listen for page chnages
     history.listen(() => {
-      setState({ clicked: false, menuName: "Menu", menuHome: "" });
+      setState({ clicked: false, menuName: "MENU", menuHome: "HOME" });
     });
   });
 
@@ -29,20 +29,20 @@ function Navbar({ history }) {
       setState({
         initial: null,
         clicked: true,
-        menuName: "Exit",
-        menuHome: "Home",
+        menuName: "EXIT",
+        menuHome: "HOME",
       });
     } else if (state.clicked === true) {
       setState({
         clicked: !state.clicked,
-        menuName: "Menu",
-        menuHome: "",
+        menuName: "MENU",
+        menuHome: "HOME",
       });
     } else if (state.clicked === false) {
       setState({
         clicked: !state.clicked,
-        menuName: "Exit",
-        menuHome: "Home",
+        menuName: "EXIT",
+        menuHome: "HOME",
       });
     }
   };
