@@ -1,17 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap");
 
 .container {
-  padding: 10px 60px;
+  padding: 1.5vmin 9vmin;
   position: relative;
   z-index: 10;
-  height: 20px;
   display: flex;
   justify-content: space-between;
 }
 
 .logo a, .navMenu button{
   color: black;
-  font-size: 20px;
+  font-size: 3vmin;
   font-family: "Gayathri", sans-serif;
 }
 
@@ -25,9 +24,3 @@
 .logo a {
   text-decoration: none;
 }
-
-@media (max-width: 43rem) {
-  .container {
-    padding: 0 10px;
-  }
-} 
