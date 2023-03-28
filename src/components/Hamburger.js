@@ -52,7 +52,6 @@ function Hamburger({ state }) {
 
   return (
     <div ref={(el) => (menu = el)} className="hamburger-menu">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <div ref={(el) => (revealMenu = el)} className="menu-layer">
         <div className="menu-links">
           <nav>
@@ -64,17 +63,23 @@ function Hamburger({ state }) {
               </li>
               <li>
                 <span>
-                  <Link to="/store">Store</Link>
+                  <Link to="/store">
+                    <sup>01</sup>Store
+                  </Link>
                 </span>
               </li>
               <li>
                 <span>
-                  <Link to="/boba">Tracker</Link>
+                  <Link to="/boba">
+                    <sup>02</sup>Tracker
+                  </Link>
                 </span>
               </li>
               <li>
                 <span>
-                  <Link to="/darkmode">DarkMode</Link>
+                  <Link to="/darkmode">
+                    <sup>03</sup>Darkmode
+                  </Link>
                 </span>
               </li>
             </ul>
