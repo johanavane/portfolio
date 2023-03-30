@@ -4,8 +4,14 @@ Website built to display my coding projects, information about me and links to s
 **Link to project:** https://www.johanamartinez.com/
 
 
+## Technologies
+Project is created with:
+* HTML
+* CSS
+* JavaScript
+* React.js
 
-### Getting Started with Create React App
+## Setup
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
