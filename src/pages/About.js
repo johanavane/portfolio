@@ -11,7 +11,10 @@ class About extends React.Component {
       <div class="flexbox-container">
         <div class="grid-photo">
           <div class="portrait">
-            <img src="selfphoto2.png" />
+            <img
+              src="selfphoto2.png"
+              alt="portrait of a woman weraing a black shirt on a baby blue background"
+            />
           </div>
         </div>
         <div class="grid-two">

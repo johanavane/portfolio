@@ -76,7 +76,9 @@ function Store() {
                 className={index === current ? "slide active" : "slide"}
                 key={index}
               >
-                {index === current && <img src={slide.image} class="image" />}
+                {index === current && (
+                  <img src={slide.image} class="image" alt={slide.alt} />
+                )}
               </div>
             );
           })}

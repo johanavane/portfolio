@@ -47,7 +47,11 @@ function DarkMode() {
             width="850"
             height="500"
           >
-            <source src="demo_chrome.mov" type="video/mp4" />
+            <source
+              src="demo_chrome.mov"
+              type="video/mp4"
+              alt="online book store whose background, images and text are changing from a light theme to a dark theme after the slidding button on a chrome is clicked"
+            />
           </video>
           <script>document.getElementById('vid').play();</script>
         </div>

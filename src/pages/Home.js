@@ -57,7 +57,10 @@ class Home extends React.Component {
           </section>
           <section>
             <div className="project-one">
-              <img src={imageOne} />
+              <img
+                src={imageOne}
+                alt="online store showing 3 shirts and one backpack"
+              />
               <div className="proj-one-text">
                 <h3>Clothing Store</h3>
                 <div className="git-demo">
@@ -74,7 +77,10 @@ class Home extends React.Component {
               </div>
             </div>
             <div className="project-two">
-              <img src={imageTwo} />
+              <img
+                src={imageTwo}
+                alt="website with a yellow form to save milk tea drinks purchased"
+              />
               <div className="proj-two-text">
                 <h3>Boba Tracker</h3>
                 <div className="git-demo">
@@ -85,7 +91,10 @@ class Home extends React.Component {
               </div>
             </div>
             <div className="project-three">
-              <img src={imageThree} />
+              <img
+                src={imageThree}
+                alt="online book store with a chrome extension in the upper right corner"
+              />
               <div className="proj-three-text">
                 <h3>Dark Mode</h3>
                 <div className="git-demo">
