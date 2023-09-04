@@ -63,8 +63,8 @@ function Hamburger({ state }) {
               </li>
               <li>
                 <span>
-                  <Link to="/">
-                    <sup>01</sup>Solar Power
+                  <Link to="/solarpanel">
+                    <sup>01</sup>Solar Panel
                   </Link>
                 </span>
               </li>
