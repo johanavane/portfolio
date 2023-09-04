@@ -36,7 +36,7 @@ nav {
   margin-right: 45px;
 }
 .menu-links sup{
-  font-size: 6vmin;
+  font-size: 5.5vmin;
 }
 
 .menu-links a {
@@ -81,4 +81,14 @@ nav {
   background: transparent;
   width: 100%;
   transition: 0s;
+}
+
+
+@media screen and (max-width: 40rem) {
+  .menu-links li {
+    font-size: 7.5vmin;
+  }
+  .menu-links sup{
+    font-size: 4.5vmin;
+  }
 }

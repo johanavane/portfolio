@@ -52,24 +52,25 @@ function SolarPanel() {
           </section>
         </section>
         <section className="sp-proj-overview">
-          <h2>Project Overview</h2>
-          <p>
-            Developed a website for a solar tech installer affiliated with
-            Sunrun, a renowned leader in the residential solar installation
-            industry. The website highlights the services offered, the
-            compelling benefits of adopting solar energy, and a user-friendly
-            contact form for scheduling consultations.
-          </p>
           <h2>Key Achievements</h2>
           <ul>
             <li>
-              <p>one</p>
+              <p>
+                Deployed a website for a solar installer certified with Sunrun,
+                a 2.3 billion dollar company, ensuring brand alignment and a
+                polished interface that streamlines contact and scheduling for
+                clients through the use of EmailJS.
+              </p>
             </li>
             <li>
-              <p>two</p>
+              <p>
+                Utilized HTML, CSS, JavaScript and React.js to create a single
+                page application highlighting the services offered and the
+                compelling benefits of adopting solar energy.
+              </p>
             </li>
             <li>
-              <p>three</p>
+              <p>Successfully deployed website using Netlify.</p>
             </li>
           </ul>
         </section>

@@ -49,7 +49,7 @@ function Store() {
         <section className="cs-proj-overview">
           <h2>Project Overview</h2>
           <p>
-            I developed an online store by utilizing the FakeStore API for data
+            Launched online store utilizing the FakeStore API for data
             retrieval, focusing on the front-end aspect of the project to
             simulate an e-commerce experience.
           </p>

@@ -52,23 +52,32 @@ function RadHair() {
           </section>
         </section>
         <section className="rha-proj-overview">
-          <h2>Project Overview</h2>
-          <p>
-            A website designed for a small business hairstylist, offering
-            clients a glimpse of their past work, convenient appointment
-            scheduling, pricing details, services offered, and easy contact
-            options.
-          </p>
           <h2>Key Achievements</h2>
           <ul>
             <li>
-              <p>one</p>
+              <p>
+                Crafted wireframes with Figma to design and launch a hair
+                stylist website, where visitors can explore a gallery of work,
+                access the scheduling portal and browse services and prices.
+              </p>
             </li>
             <li>
-              <p>two</p>
+              <p>
+                Implemented media queries to ensure responsive web design,
+                optimizing the website's layout and content presentation across
+                various devices.
+              </p>
             </li>
             <li>
-              <p>three</p>
+              <p>
+                Prioritized web accessibility by adhering to WCAG guidelines,
+                ensuring an inclusive design and format for all users.
+              </p>
+            </li>
+            <li>
+              <p>
+                <p>Successfully deployed website using Netlify.</p>
+              </p>
             </li>
           </ul>
         </section>
