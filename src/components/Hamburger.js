@@ -63,22 +63,29 @@ function Hamburger({ state }) {
               </li>
               <li>
                 <span>
+                  <Link to="/">
+                    <sup>01</sup>Solar Power
+                  </Link>
+                </span>
+              </li>
+              <li>
+                <span>
+                  <Link to="/radhair">
+                    <sup>02</sup>Rad Hair Art
+                  </Link>
+                </span>
+              </li>
+              <li>
+                <span>
                   <Link to="/store">
-                    <sup>01</sup>Store
+                    <sup>03</sup>Clothing Store
                   </Link>
                 </span>
               </li>
               <li>
                 <span>
                   <Link to="/boba">
-                    <sup>02</sup>Tracker
-                  </Link>
-                </span>
-              </li>
-              <li>
-                <span>
-                  <Link to="/darkmode">
-                    <sup>03</sup>Darkmode
+                    <sup>04</sup>Boba Tracker
                   </Link>
                 </span>
               </li>

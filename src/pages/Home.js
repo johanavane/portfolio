@@ -3,7 +3,7 @@ import "../styles/Home.css";
 import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 import imageOne from "../images/projectOne.png";
 import imageTwo from "../images/projectTwo.png";
-import imageThree from "../images/projectThree.png";
+import imageThree from "../images/rha-home.png";
 import { Link } from "react-router-dom";
 
 class Home extends React.Component {
@@ -53,7 +53,7 @@ class Home extends React.Component {
         {/* featured projects section */}
         <div className="home-projects">
           <section>
-            <h2>Featured Projects</h2>
+            <h2>Project Gallery</h2>
           </section>
           <section>
             <div className="project-one">
@@ -90,15 +90,16 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
+            {/* rad hair art */}
             <div className="project-three">
               <img
                 src={imageThree}
-                alt="online book store with a chrome extension in the upper right corner"
+                alt="website with a yellow form to save milk tea drinks purchased"
               />
-              <div className="proj-three-text">
-                <h3>Dark Mode</h3>
+              <div className="proj-two-text">
+                <h3>Rad Hair Art</h3>
                 <div className="git-demo">
-                  <Link to="/DarkMode">
+                  <Link to="/radhair">
                     <span>Demo</span>
                   </Link>
                 </div>
