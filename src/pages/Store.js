@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Store.css";
-import { StoreImages } from "../components/StoreImages";
+import "../styles/Store.scss";
+import { StoreImages } from "../components/StoreImages.js";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
 function Store() {
@@ -21,77 +21,78 @@ function Store() {
     return null;
   }
   return (
-    <div class="store-container">
-      <div class="store-layer">
-        <div class="store-title">
-          <p class="title-one">Clothing </p>
-          <p class="title-two">Store</p>
-        </div>
-        <div class="store-columns-container">
-          <div class="store-column-language">
-            <div class="store-skills">
-              <p>Languages</p>
-              <ul class="store-language">
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <div class="store-skills">
-              <p>Library</p>
-              <ul class="store-language">
-                <li>React.js</li>
-              </ul>
-            </div>
-          </div>
-          <div class="store-column-about">
-            <div class="store-description">
-              <p>Project Details</p>
-            </div>
-            <p>
-              This is an online store I created by retrieving data from the
-              FakeStore API. I wanted to focus on the front end aspect of the
-              project, so using the FakeStore API allowed me to use data without
-              having to create my own database. Within the women’s, men’s and
-              jewelry categories I fetched data for product titles, images,
-              prices, and descriptions. From there I created individual product
-              pages for each item the user would be interested in purchasing.
-              Since I wanted to replicate the feel of an online store I also
-              implemented a landing page, a user login page and a sign up page.
-            </p>
-            <p>
-              Aside from developing this project, I used Figma to design the
-              layout of each page and create a web application with a cohesive
-              design that would be easy to navigate. Although this project is
-              not being hosted, I have included images of the project below.
-            </p>
-          </div>
-        </div>
-        <section class="slider">
-          <FaArrowLeft class="left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="right-arrow" onClick={nextSlide} />
-          {StoreImages.map((slide, index) => {
-            return (
-              <div
-                className={index === current ? "slide active" : "slide"}
-                key={index}
-              >
-                {index === current && (
-                  <img src={slide.image} class="image" alt={slide.alt} />
-                )}
-              </div>
-            );
-          })}
+    <div className="cs-container">
+      <h1>
+        Clothing <br />
+        Store
+      </h1>
+      <section className="cs-overview">
+        <section className="cs-tech-stack">
+          <section>
+            <h2>Tech Stack</h2>
+            <ul>
+              <li>
+                <span>React.js</span>
+              </li>
+              <li>
+                <span>JavaScript</span>
+              </li>
+              <li>
+                <span>CSS</span>
+              </li>
+              <li>
+                <span>HTML</span>
+              </li>
+            </ul>
+          </section>
         </section>
-        <div class="boba-end">
-          <div class="boba-next">
-            <Link to="/Boba">Next Project</Link>
-          </div>
-          <div class="boba-link">
-            <Link to="/Boba">BobaTracker</Link>
-          </div>
-        </div>
-      </div>
+        <section className="cs-proj-overview">
+          <h2>Project Overview</h2>
+          <p>
+            I developed an online store by utilizing the FakeStore API for data
+            retrieval, focusing on the front-end aspect of the project to
+            simulate an e-commerce experience.
+          </p>
+          <h2>Key Achievements</h2>
+          <ul>
+            <li>
+              <p>
+                Developed an online store web application containing a landing,
+                login, register, and individual product pages with HTML, CSS,
+                JavaScript and React.js.
+              </p>
+            </li>
+            <li>
+              <p>
+                Retrieved product information from the Fake Store API through a
+                GET request on women’s, men’s and jewelry categories, for users
+                to easily browse products and view individual product pricing,
+                descriptions and sizing.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section className="cs-images cs-slider">
+        {StoreImages.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}
+            >
+              {index === current && <img src={slide.image} />}
+            </div>
+          );
+        })}
+        <section className="cs-arrows">
+          <FaArrowLeft class="cs-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="cs-right-arrow" onClick={nextSlide} />
+        </section>
+      </section>
+      <section className="cs-footer">
+        <Link to="/boba">Next Project</Link>
+        <Link to="/boba">BobaTracker</Link>
+      </section>
     </div>
   );
 }
