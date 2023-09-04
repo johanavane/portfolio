@@ -113,7 +113,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 15vmin;
+  margin: 20vmin;
 }
 .home-projects h2{
   font-size: 4.5vmin;
@@ -126,7 +126,7 @@
   justify-content: center;
 }
 /* COLUMN = image + proj name + git */
-.project-one, .project-two, .project-three{
+.project-one, .project-two, .project-three, .project-four{
   height:45vmin;
   width: 48vmin;
   border-radius: 4vmin;
@@ -139,26 +139,26 @@
   margin: 2vmin;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 }
-.project-one a, .project-two a, .project-three a{
+.project-one a, .project-two a, .project-three a, .project-four a{
   /* github + demo text links */
   text-decoration: none;
   color: black;
 }
-.project-one h3, .project-two h3, .project-three h3{
+.project-one h3, .project-two h3, .project-three h3, .project-four h3{
   /* project name font size */
   font-size: 3vmin;
 }
-.project-one span, .project-two span, .project-three span{
+.project-one span, .project-two span, .project-three span, .project-four span{
   /* github + demo font */
   font-size: 2.5vmin;
 }
-.project-one img, .project-two img, .project-three img{
+.project-one img, .project-two img, .project-three img, .project-four img{
   width: 44vmin;
   border-radius: 2vmin;
 }
 
 /* Project name + github + demo */
-.proj-one-text, .proj-two-text, .proj-three-text{
+.proj-one-text, .proj-two-text, .proj-three-text, .proj-four-text{
   display:flex;
   flex-direction: row;
   align-items: center;
@@ -172,7 +172,7 @@
 }
 
 /* hover effect on projects */
-.project-one:hover, .project-two:hover, .project-three:hover{
+.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover{
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   /* transform creates illusion of box being lifted */
   transform: translateY(-5px);

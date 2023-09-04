@@ -4,6 +4,7 @@ import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 import imageOne from "../images/projectOne.png";
 import imageTwo from "../images/projectTwo.png";
 import imageThree from "../images/rha-home.png";
+import imageFour from "../images/sp-home.png";
 import { Link } from "react-router-dom";
 
 class Home extends React.Component {
@@ -92,14 +93,23 @@ class Home extends React.Component {
             </div>
             {/* rad hair art */}
             <div className="project-three">
-              <img
-                src={imageThree}
-                alt="website with a yellow form to save milk tea drinks purchased"
-              />
-              <div className="proj-two-text">
+              <img src={imageThree} alt="" />
+              <div className="proj-three-text">
                 <h3>Rad Hair Art</h3>
                 <div className="git-demo">
                   <Link to="/radhair">
+                    <span>Demo</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* solar panel website */}
+            <div className="project-four">
+              <img src={imageFour} alt="" />
+              <div className="proj-four-text">
+                <h3>Solar Panel</h3>
+                <div className="git-demo">
+                  <Link to="/solarpanel">
                     <span>Demo</span>
                   </Link>
                 </div>
