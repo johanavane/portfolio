@@ -1,4 +1,4 @@
-.cs-container{
+.bt-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,7 +17,7 @@
     }
 }
 
-.cs-overview{
+.bt-overview{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,7 +26,7 @@
     }
 }
 
-.cs-tech-stack{
+.bt-tech-stack{
     width: 20vmin;
     padding: 2vmin;
     display: flex;
@@ -35,13 +35,13 @@
     white-space: nowrap;
 }
 
-.cs-proj-overview{
+.bt-proj-overview{
     width: 60vmin;
     padding: 2vmin;
     margin: 0 0 0 10vmin;
 }
 
-.cs-images{
+.bt-images{
     margin: 10vmin 0;
     img{
         width: 950px;
@@ -52,13 +52,13 @@
         justify-content: center;
     }
 }
-.cs-left-arrow, .cs-right-arrow{
+.bt-left-arrow, .bt-right-arrow{
     font-size: 2.2rem;
     margin: 2vmin 2vmin;
     border-radius: 2vmin;
     border: 0.5vmin solid #42682f;;
 }
-.cs-footer{
+.bt-footer{
     margin-bottom: 5vmin;
     a{
         display: block;
@@ -75,7 +75,7 @@
 
 // MEDIA QUERIES --------------------------------------------------------
 @media screen and (min-width: 100rem) {
-    .cs-images{
+    .bt-images{
         img{
             width: 1150px;
             height: 1150px;
@@ -84,35 +84,35 @@
 }
 
 @media screen and (max-width: 70rem) {
-    .cs-images{
+    .bt-images{
         img{
             width: 950px;
             height: 480px;
         }
     }
-    .cs-left-arrow, .cs-right-arrow{
+    .bt-left-arrow, .bt-right-arrow{
         font-size: 2.0rem;
     }
 }
 
 // IPAD
 @media screen and (max-width: 55rem) {
-    .cs-container {
+    .bt-container {
         h2{
             font-size: 19px;
         }
     }
-    .cs-left-arrow, .cs-right-arrow{
+    .bt-left-arrow, .bt-right-arrow{
         font-size: 1.2rem;
     }
-    .cs-overview{
+    .bt-overview{
         margin: 0 5vmin;
     }
-    .cs-tech-stack{
+    .bt-tech-stack{
         width: 100%;
         margin: 0;
     }
-    .cs-proj-overview{
+    .bt-proj-overview{
         width: 100%;
         margin: 0;
     }
@@ -120,7 +120,7 @@
 
 // Intermediate screen size
 @media screen and (max-width: 45rem) {
-    .cs-images{
+    .bt-images{
         img{
             width: 530px;
             height: 400px;
@@ -130,7 +130,7 @@
 
 // Surface Duo
 @media screen and (max-width: 40rem) {
-    .cs-container {
+    .bt-container {
         h1 {
             font-size: 100px;
         }
@@ -141,16 +141,16 @@
             font-size: 16px;
         }
     }
-    .cs-images{
+    .bt-images{
         img{
             width: 410px;
             height: 300px;
         }
     }
-    .cs-left-arrow, .cs-right-arrow{
+    .bt-left-arrow, .bt-right-arrow{
         font-size: 1.2rem;
     }
-    .cs-footer {
+    .bt-footer {
         a{
             font-size: 33px;
         }  
@@ -163,7 +163,7 @@
 
 // iphone 12 pro max, iphone 13 pro max
 @media screen and (max-width: 428px) and (max-height : 926px) {
-    .cs-images{
+    .bt-images{
         img{
             width: 330px;
         }
@@ -172,10 +172,10 @@
   
 // iPhone 11, 11 Pro Max, XR, S20, A51/71
 @media screen and (max-width: 414px) and (device-height : 896px)  {
-    .cs-container h1{
+    .bt-container h1{
         font-size: 90px;
     }
-    .cs-images{
+    .bt-images{
         img{
             width: 310px;
         }
@@ -184,10 +184,10 @@
   
 // iphone 8 plus
 @media screen and (max-width: 414px) and (device-height : 736px)  {
-    .cs-container h1{
+    .bt-container h1{
         font-size: 90px;
     }
-    .cs-images{
+    .bt-images{
         img{
             width: 310px;
         }
@@ -196,7 +196,7 @@
   
 // 13, 13 Pro, 12, 12 Pro, Pixel 5
 @media screen and (max-width: 390px) and (device-height : 844px)  {
-    .cs-container h1{
+    .bt-container h1{
         font-size: 80px;
     }
 }
@@ -204,7 +204,7 @@
   
 // iPhone 11 Pro, 11 X, 13 Mini, 12 Mini, X, XS
 @media screen and (max-width: 375px) and (device-height : 812px)  {
-    .cs-container h1{
+    .bt-container h1{
         font-size: 80px;
     }
 }
@@ -214,17 +214,17 @@
     .rhspa-container h1{
         font-size: 80px;
     }
-    .cs-left-arrow, .cs-right-arrow{
+    .bt-left-arrow, .bt-right-arrow{
         font-size: 1.2rem;
     }
 }
   
 // Samsung 8+
 @media screen and (max-width: 23rem) {
-    .cs-container h1{
+    .bt-container h1{
         font-size: 80px;
     }
-    .cs-images{
+    .bt-images{
         img{
             width: 335px;
         }
@@ -233,7 +233,7 @@
   
 // Galaxy fold
 @media screen and (max-width: 22rem)  {
-    .cs-container {
+    .bt-container {
         h1{
             font-size: 65px;
         }
@@ -244,13 +244,13 @@
             font-size: 15px;
         }
     }
-    .cs-images{
+    .bt-images{
         img{
             width: 250px;
             height: 200px;
         }
     }
-    .cs-left-arrow, .cs-right-arrow{
+    .bt-left-arrow, .bt-right-arrow{
         font-size: 1.0rem;
     }
 }

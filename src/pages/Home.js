@@ -65,12 +65,6 @@ class Home extends React.Component {
               <div className="proj-one-text">
                 <h3>Clothing Store</h3>
                 <div className="git-demo">
-                  <a
-                    href="https://github.com/johanavane/online-store"
-                    target="_blank"
-                  >
-                    <span>Github</span>
-                  </a>
                   <Link to="/Store">
                     <span>Demo</span>
                   </Link>
