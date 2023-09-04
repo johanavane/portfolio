@@ -3,7 +3,8 @@ import "../styles/Home.css";
 import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 import imageOne from "../images/projectOne.png";
 import imageTwo from "../images/projectTwo.png";
-import imageThree from "../images/projectThree.png";
+import imageThree from "../images/rha-home.png";
+import imageFour from "../images/sp-home.png";
 import { Link } from "react-router-dom";
 
 class Home extends React.Component {
@@ -53,7 +54,7 @@ class Home extends React.Component {
         {/* featured projects section */}
         <div className="home-projects">
           <section>
-            <h2>Featured Projects</h2>
+            <h2>Project Gallery</h2>
           </section>
           <section>
             <div className="project-one">
@@ -64,12 +65,6 @@ class Home extends React.Component {
               <div className="proj-one-text">
                 <h3>Clothing Store</h3>
                 <div className="git-demo">
-                  <a
-                    href="https://github.com/johanavane/online-store"
-                    target="_blank"
-                  >
-                    <span>Github</span>
-                  </a>
                   <Link to="/Store">
                     <span>Demo</span>
                   </Link>
@@ -90,15 +85,25 @@ class Home extends React.Component {
                 </div>
               </div>
             </div>
+            {/* rad hair art */}
             <div className="project-three">
-              <img
-                src={imageThree}
-                alt="online book store with a chrome extension in the upper right corner"
-              />
+              <img src={imageThree} alt="" />
               <div className="proj-three-text">
-                <h3>Dark Mode</h3>
+                <h3>Rad Hair Art</h3>
                 <div className="git-demo">
-                  <Link to="/DarkMode">
+                  <Link to="/radhair">
+                    <span>Demo</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* solar panel website */}
+            <div className="project-four">
+              <img src={imageFour} alt="" />
+              <div className="proj-four-text">
+                <h3>Solar Panel</h3>
+                <div className="git-demo">
+                  <Link to="/solarpanel">
                     <span>Demo</span>
                   </Link>
                 </div>

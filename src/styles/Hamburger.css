@@ -30,13 +30,13 @@ nav {
 
 .menu-links li {
   list-style: none;
-  font-size: 13.3vmin;
-  height: 19vmin;
+  font-size: 10vmin;
+  height: 14vmin;
   position: relative;
   margin-right: 45px;
 }
 .menu-links sup{
-  font-size: 6.6vmin;
+  font-size: 6vmin;
 }
 
 .menu-links a {

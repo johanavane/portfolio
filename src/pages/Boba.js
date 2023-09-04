@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Boba.css";
+import "../styles/Boba.scss";
 import { BobaImages } from "../components/BobaImages.js";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -21,76 +21,84 @@ function Boba() {
     return null;
   }
   return (
-    <div class="boba-container">
-      <div class="boba-layer">
-        <div class="boba-title">
-          <p class="title-one">Boba</p>
-          <p class="title-two">Tracker</p>
-        </div>
-        <div class="boba-columns-container">
-          <div class="boba-column-language">
-            <div class="boba-skills">
-              <p>Languages</p>
-              <ul class="boba-language">
-                <li>HTML</li>
-                <li>Tailwind CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <div class="boba-skills">
-              <p>Library</p>
-              <ul class="boba-language">
-                <li>React.js</li>
-              </ul>
-            </div>
-          </div>
-          <div class="boba-column-about">
-            <div class="boba-description">
-              <p>Project Details</p>
-            </div>
-            <p>
-              This is a project I took part in during the course of
-              ‘Introduction to Software Engineering’ at UC Santa Cruz. Boba
-              Tracker is a web application that allows users to track their
-              weekly Milk Tea spending and their average sugar intake. After
-              entering drink purchases, a chart is generated for weekly spending
-              and sugar intake. The user also has the option of editing and
-              deleting entries.
-            </p>
-            <p>
-              My roles in this project included being a developer and a Scrum
-              Master. As a Scrum master, I was responsible for leading the Scrum
-              stand up meetings where we tracked our progress. In regards to my
-              contribution to the project, I created the initial mock up for the
-              UI using Figma. I also created the form utilized to add new drink
-              entries, in addition I connected the drink form to the database
-              and made changes to the UI for the Login Page and Register Page.
-            </p>
-          </div>
-        </div>
-        <section class="slider">
-          <FaArrowLeft class="left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="right-arrow" onClick={nextSlide} />
-          {BobaImages.map((slide, index) => {
-            return (
-              <div
-                className={index === current ? "slide active" : "slide"}
-                key={index}
-              >
-                {index === current && <img src={slide.image} class="image" />}
-              </div>
-            );
-          })}
+    <div className="bt-container">
+      <h1>
+        Boba <br />
+        Tracker
+      </h1>
+      <section className="bt-overview">
+        <section className="bt-tech-stack">
+          <section>
+            <h2>Tech Stack</h2>
+            <ul>
+              <li>
+                <span>React.js</span>
+              </li>
+              <li>
+                <span>JavaScript</span>
+              </li>
+              <li>
+                <span>CSS</span>
+              </li>
+              <li>
+                <span>HTML</span>
+              </li>
+            </ul>
+          </section>
         </section>
-        <div class="dark-end">
-          <div class="dark-next">
-            <Link to="/DarkMode">Next Project</Link>
-          </div>
-          <div class="dark-link">
-            <Link to="/DarkMode">DarkMode</Link>
-          </div>
-        </div>
-      </div>
+        <section className="bt-proj-overview">
+          <h2>Project Overview</h2>
+          <p>
+            Boba Tracker is a web app enabling users to monitor their weekly
+            Milk Tea expenses and sugar consumption. By recording drink
+            purchases, the app generates weekly spending and sugar intake
+            charts, offering the flexibility to edit or delete entries.
+          </p>
+          <h2>Key Achievements</h2>
+          <ul>
+            <li>
+              <p>
+                Led a five-person team using Scrum methodology to build a full
+                stack web application where users can track weekly milk tea
+                purchases and minimize spending.
+              </p>
+            </li>
+            <li>
+              <p>
+                Prototyped and redesigned the UI using Figma, to create a more
+                fun and visually colorful experience for users.
+              </p>
+            </li>
+            <li>
+              <p>
+                Built an entry form with HTML, Tailwind CSS, JavaScript, and
+                React.js where users can save drinks to an existing database by
+                performing a POST request.
+              </p>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section className="bt-images bt-slider">
+        {BobaImages.map((slide, index) => {
+          return (
+            <div
+              className={index === current ? "slide active" : "slide"}
+              key={index}
+            >
+              {index === current && <img src={slide.image} />}
+            </div>
+          );
+        })}
+        <section className="bt-arrows">
+          <FaArrowLeft class="bt-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="bt-right-arrow" onClick={nextSlide} />
+        </section>
+      </section>
+      <section className="bt-footer">
+        <Link to="/solarpanel">Next Project</Link>
+        <Link to="/solarpanel">SolarPanel</Link>
+      </section>
     </div>
   );
 }
