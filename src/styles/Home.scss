@@ -44,30 +44,29 @@
   align-items: center;
   justify-content: center;
   border-radius: 5vmin;
+  section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  h1, h2, a{
+    color: whitesmoke;
+    text-decoration: none;
+  }
+  h1{
+    font-size: 10vmin;
+    font-family: 'PPMori';
+  }
+  h2, a{
+    font-size: 4vmin;
+    font-family: 'PPMori-Light';
+  }
+  ul{
+    list-style: none;
+    padding-left: 0;
+  }
 }
-.gradient-container section{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.gradient-container h1, .gradient-container h2, .gradient-container a{
-  font-family: 'PPMori';
-  color: whitesmoke;
-}
-.gradient-container h1{
-  font-size: 10vmin;
-}
-.gradient-container h2, .gradient-container a{
-  font-size: 4vmin;
-  font-family: 'PPMori-Light';
-}
-.gradient-container ul{
-  list-style: none;
-  padding-left: 0;
-}
-.gradient-container a{
-  text-decoration: none;
-}
+
 .visitor-greeting h1{
   text-align: center;
 }
@@ -75,12 +74,14 @@
 /* HOVER effect over links ---------------------- */
 .links{
   margin-left: 5vmin;
+
+  span{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+  }
 }
-.links span {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
+
 .links span:before, .links span:after {
   content: '';
   position: absolute;
@@ -109,24 +110,25 @@
 }
 
 /* bottom section PROJECTS ------------------------------ */
-.home-projects{
+.project-gallery{
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 20vmin;
+
+  h2{
+    font-size: 4.5vmin;
+  }
+  section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
-.home-projects h2{
-  font-size: 4.5vmin;
-}
-/* ROW = feat projects + 3 boxes */
-.home-projects section {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+
 /* COLUMN = image + proj name + git */
-.project-one, .project-two, .project-three, .project-four{
+.project{
   height:45vmin;
   width: 48vmin;
   border-radius: 4vmin;
@@ -138,41 +140,42 @@
   align-items: center;
   margin: 2vmin;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-}
-.project-one a, .project-two a, .project-three a, .project-four a{
-  /* github + demo text links */
-  text-decoration: none;
-  color: black;
-}
-.project-one h3, .project-two h3, .project-three h3, .project-four h3{
-  /* project name font size */
-  font-size: 3vmin;
-}
-.project-one span, .project-two span, .project-three span, .project-four span{
-  /* github + demo font */
-  font-size: 2.5vmin;
-}
-.project-one img, .project-two img, .project-three img, .project-four img{
-  width: 44vmin;
-  border-radius: 2vmin;
+
+  a{
+    /* github + demo text links */
+    text-decoration: none;
+    color: black
+  }
+  h3{
+    /* project name font size */
+    font-size: 3vmin;
+  }
+  span{
+    /* github + demo font */
+    font-size: 2.5vmin;
+  }
+  img{
+    width: 44vmin;
+    border-radius: 2vmin;
+  }
 }
 
 /* Project name + github + demo */
-.proj-one-text, .proj-two-text, .proj-three-text, .proj-four-text{
+.project-text{
   display:flex;
   flex-direction: row;
   align-items: center;
 }
 
 /* github + demo */
-.git-demo{
+.project-demo{
   display: flex;
   flex-direction: column;
   margin-left: 5vmin;
 }
 
 /* hover effect on projects */
-.project-one:hover, .project-two:hover, .project-three:hover, .project-four:hover{
+.project:hover{
   box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
   /* transform creates illusion of box being lifted */
   transform: translateY(-5px);
