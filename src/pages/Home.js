@@ -1,50 +1,95 @@
 import React from "react";
-import "../styles/Home.scss";
-import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
-import imageOne from "../images/projectOne.png";
-import imageTwo from "../images/projectTwo.png";
-import imageThree from "../images/rha-home.png";
-import imageFour from "../images/sp-home.png";
 import { Link } from "react-router-dom";
+import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
+import "../styles/Home.scss";
+import imageCS from "../images/projectCS.png";
+import imageBT from "../images/projectBT.png";
+import imageRHA from "../images/rha-home.png";
+import imageSP from "../images/sp-home.png";
+
+function ContactLink({ href, text }) {
+  return (
+    <li>
+      <a href={href} target="_blank">
+        <span>{text}</span>
+      </a>
+    </li>
+  );
+}
+
+// Projects - array of objects
+const projects = [
+  {
+    title: "Solar Panel",
+    image: imageSP,
+    alt: "",
+    link: "/solarpanel",
+  },
+  {
+    title: "Rad Hair Art",
+    image: imageRHA,
+    alt: "",
+    link: "/radhair",
+  },
+  {
+    title: "Clothing Store",
+    image: imageCS,
+    alt: "",
+    link: "/store",
+  },
+  {
+    title: "Boba Tracker",
+    image: imageBT,
+    alt: "",
+    link: "/boba",
+  },
+];
+
+function ProjectCard({ title, image, alt, link }) {
+  return (
+    <div className="project">
+      <img src={image} alt={alt} />
+      <div className="project-text">
+        <h3>{title}</h3>
+        <div className="project-demo">
+          <Link to={link}>
+            <span>Demo</span>
+          </Link>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 function Home() {
   return (
     <>
-      <section className="top-section">
+      <section className="landing-container">
         <div className="gradient-container">
-          <section className="visitor-greeting">
+          <section className="greeting">
             <h1>
               Hello,
-              <br /> I'm Johana.
+              <br />
+              I'm Johana.
               <br />A front end developer.
             </h1>
           </section>
           <section>
             <h2>Let's connect:</h2>
             <ul className="links">
-              <li>
-                <a href="mailto:johanamalv@gmail.com">
-                  <span>Email</span>
-                </a>
-              </li>
-              <li>
-                <a href={Pdf} target="_blank">
-                  <span>Resume</span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/johana-ma/"
-                  target="_blank"
-                >
-                  <span>LinkedIn</span>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/johanavane" target="_blank">
-                  <span>Github</span>
-                </a>
-              </li>
+              <ContactLink
+                href={"mailto:johanamalv@gmail.com"}
+                text={"Email"}
+              />
+              <ContactLink href={Pdf} text={"Resume"} />
+              <ContactLink
+                href={"https://www.linkedin.com/in/johana-ma/"}
+                text={"LinkedIn"}
+              />
+              <ContactLink
+                href={"https://github.com/johanavane"}
+                text={"GitHub"}
+              />
             </ul>
           </section>
         </div>
@@ -53,57 +98,11 @@ function Home() {
         <section>
           <h2>Featured Work</h2>
         </section>
+        {/* Project Card - Projects Info */}
         <section>
-          <div className="project">
-            <img src={imageFour} alt="" />
-            <div className="project-text">
-              <h3>Solar Panel</h3>
-              <div className="project-demo">
-                <Link to="/solarpanel">
-                  <span>Demo</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="project">
-            <img src={imageThree} alt="" />
-            <div className="project-text">
-              <h3>Rad Hair Art</h3>
-              <div className="project-demo">
-                <Link to="/radhair">
-                  <span>Demo</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="project">
-            <img
-              src={imageOne}
-              alt="online store showing 3 shirts and one backpack"
-            />
-            <div className="project-text">
-              <h3>Clothing Store</h3>
-              <div className="project-demo">
-                <Link to="/Store">
-                  <span>Demo</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className="project">
-            <img
-              src={imageTwo}
-              alt="website with a yellow form to save milk tea drinks purchased"
-            />
-            <div className="project-text">
-              <h3>Boba Tracker</h3>
-              <div className="project-demo">
-                <Link to="/Boba">
-                  <span>Demo</span>
-                </Link>
-              </div>
-            </div>
-          </div>
+          {projects.map((project) => (
+            <ProjectCard {...project} />
+          ))}
         </section>
       </div>
     </>
