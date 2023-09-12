@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Store.scss";
 import { StoreImages } from "../components/StoreImages.js";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -21,13 +20,13 @@ function Store() {
     return null;
   }
   return (
-    <div className="cs-container">
+    <div className="all-container">
       <h1>
         Clothing <br />
         Store
       </h1>
-      <section className="cs-overview">
-        <section className="cs-tech-stack">
+      <section className="all-overview">
+        <section className="all-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -46,7 +45,7 @@ function Store() {
             </ul>
           </section>
         </section>
-        <section className="cs-proj-overview">
+        <section className="all-proj-overview">
           <h2>Project Overview</h2>
           <p>
             Launched online store utilizing the FakeStore API for data
@@ -73,7 +72,7 @@ function Store() {
           </ul>
         </section>
       </section>
-      <section className="cs-images cs-slider">
+      <section className="all-images all-slider">
         {StoreImages.map((slide, index) => {
           return (
             <div
@@ -84,12 +83,12 @@ function Store() {
             </div>
           );
         })}
-        <section className="cs-arrows">
-          <FaArrowLeft class="cs-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="cs-right-arrow" onClick={nextSlide} />
+        <section className="all-arrows">
+          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="cs-footer">
+      <section className="all-footer">
         <Link to="/boba">Next Project</Link>
         <Link to="/boba">BobaTracker</Link>
       </section>

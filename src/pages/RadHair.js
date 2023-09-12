@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/RadHair.scss";
 import { RadHairImages } from "../components/RadHairImages.js";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -21,13 +20,13 @@ function RadHair() {
     return null;
   }
   return (
-    <div className="rha-container">
+    <div className="all-container">
       <h1>
         Rad Hair <br />
         Art
       </h1>
-      <section className="rha-overview">
-        <section className="rha-tech-stack">
+      <section className="all-overview">
+        <section className="all-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -45,13 +44,13 @@ function RadHair() {
               </li>
             </ul>
           </section>
-          <section className="rha-links">
+          <section className="all-links">
             <a className="web-design" href="https://www.radhairart.com/">
               RadHairArt.com
             </a>
           </section>
         </section>
-        <section className="rha-proj-overview">
+        <section className="all-proj-overview">
           <h2>Key Achievements</h2>
           <ul>
             <li>
@@ -82,7 +81,7 @@ function RadHair() {
           </ul>
         </section>
       </section>
-      <section className="rha-images rha-slider">
+      <section className="all-images all-slider">
         {RadHairImages.map((slide, index) => {
           return (
             <div
@@ -93,12 +92,12 @@ function RadHair() {
             </div>
           );
         })}
-        <section className="rha-arrows">
-          <FaArrowLeft class="rha-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="rha-right-arrow" onClick={nextSlide} />
+        <section className="all-arrows">
+          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="rha-footer">
+      <section className="all-footer">
         <Link to="/store">Next Project</Link>
         <Link to="/store">ClothingStore</Link>
       </section>

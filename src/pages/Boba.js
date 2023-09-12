@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Boba.scss";
 import { BobaImages } from "../components/BobaImages.js";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
@@ -20,14 +19,15 @@ function Boba() {
   if (!Array.isArray(slides) || slides.length <= 0) {
     return null;
   }
+
   return (
-    <div className="bt-container">
+    <div className="all-container">
       <h1>
         Boba <br />
         Tracker
       </h1>
-      <section className="bt-overview">
-        <section className="bt-tech-stack">
+      <section className="all-overview">
+        <section className="all-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -46,7 +46,7 @@ function Boba() {
             </ul>
           </section>
         </section>
-        <section className="bt-proj-overview">
+        <section className="all-proj-overview">
           <h2>Project Overview</h2>
           <p>
             Boba Tracker is a web app enabling users to monitor their weekly
@@ -79,8 +79,8 @@ function Boba() {
           </ul>
         </section>
       </section>
-      <section className="bt-images bt-slider">
-        {BobaImages.map((slide, index) => {
+      <section className="all-images all-slider">
+        {slides.map((slide, index) => {
           return (
             <div
               className={index === current ? "slide active" : "slide"}
@@ -90,12 +90,12 @@ function Boba() {
             </div>
           );
         })}
-        <section className="bt-arrows">
-          <FaArrowLeft class="bt-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="bt-right-arrow" onClick={nextSlide} />
+        <section className="all-arrows">
+          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="bt-footer">
+      <section className="all-footer">
         <Link to="/solarpanel">Next Project</Link>
         <Link to="/solarpanel">SolarPanel</Link>
       </section>
