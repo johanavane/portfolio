@@ -48,7 +48,8 @@
   color: black;
   letter-spacing: 0.04em;
   text-align: left;
-  font-family: "Gayathri", sans-serif;
+  font-family: "PPMori-Light";
+  /* font-family: "Gayathri", sans-serif; */
   font-weight: 400;
 }
 .intro a {
@@ -63,7 +64,8 @@ text-align: center;
   letter-spacing: 0.04em;
   text-align: center;
   color: #7fa667;
-  font-family: "Gayathri", sans-serif;
+  font-family: "PPMori-Light";
+  /* font-family: "Gayathri", sans-serif; */
 }
 .location a {
   color: #7fa667;
