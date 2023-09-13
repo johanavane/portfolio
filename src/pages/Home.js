@@ -20,25 +20,25 @@ function ContactLink({ href, text }) {
 // Projects - array of objects
 const projects = [
   {
-    title: "Solar Panel",
+    title: "Beautiful Website for Solar Panel Installation",
     image: imageSP,
     alt: "",
     link: "/solarpanel",
   },
   {
-    title: "Rad Hair Art",
+    title: "Unique Website for 'Rad Hair Art'",
     image: imageRHA,
     alt: "",
     link: "/radhair",
   },
   {
-    title: "Clothing Store",
+    title: "FakeStore API Clothing & Accessories Store",
     image: imageCS,
     alt: "",
     link: "/store",
   },
   {
-    title: "Boba Tracker",
+    title: "Milk Tea Expense & Sugar Consumption Manager",
     image: imageBT,
     alt: "",
     link: "/boba",
@@ -48,14 +48,15 @@ const projects = [
 function ProjectCard({ title, image, alt, link }) {
   return (
     <div className="project">
-      <img src={image} alt={alt} />
+      <div className="project-img">
+        <img src={image} alt={alt} />
+      </div>
       <div className="project-text">
         <h3>{title}</h3>
-        <div className="project-demo">
-          <Link to={link}>
-            <span>Demo</span>
-          </Link>
-        </div>
+        <p>Web Design & Development</p>
+        <Link to={link}>
+          <span>VIEW PROJECT</span>
+        </Link>
       </div>
     </div>
   );
