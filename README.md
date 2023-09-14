@@ -32,4 +32,9 @@ If you have any questions or would like to get in touch, feel free to reach out 
 
 Thank you for visiting my portfolio, and I hope you enjoy exploring my projects!
 
+## Screenshots
+![landing-page-screenshot](https://github.com/johanavane/portfolio/assets/60996916/7a3a2d57-89c2-4984-893d-62bc669b45b1)
+![home-projects-screenshot](https://github.com/johanavane/portfolio/assets/60996916/9bf6d210-7e94-4111-8ea8-8f5c6581c8b2)
+![rha-project-screenshot](https://github.com/johanavane/portfolio/assets/60996916/2ef9973b-b1c4-4113-b3d9-b7348ea1c4ff)
+
 
