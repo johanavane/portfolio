@@ -88,7 +88,7 @@ function RadHair() {
               className={index === current ? "slide active" : "slide"}
               key={index}
             >
-              {index === current && <img src={slide.image} />}
+              {index === current && <img src={slide.image} alt={slide.alt} />}
             </div>
           );
         })}

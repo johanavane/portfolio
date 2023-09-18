@@ -8,20 +8,20 @@ import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 class About extends React.Component {
   render() {
     return (
-      <div class="flexbox-container">
-        <div class="grid-photo">
-          <div class="portrait">
+      <div className="flexbox-container">
+        <div className="grid-photo">
+          <div className="portrait">
             <img
               src="selfphoto2.png"
               alt="portrait of a woman weraing a black shirt on a baby blue background"
             />
           </div>
         </div>
-        <div class="grid-two">
+        <div className="grid-two">
           <div className="location">
             <p>
               <FaIcons.FaMapMarkerAlt />
-              <a> San Jose, CA</a>
+              San Jose, CA
             </p>
           </div>
           <div className="intro">
@@ -43,19 +43,22 @@ class About extends React.Component {
             <p>
               If you would like to connect with me about any work opportunities,
               you can reach me at any of the links I have below and you can also
-              check out my <a class="resume"> resume </a>
-              <a href={Pdf} target="_blank">
-                here
+              check out my resume{" "}
+              <a href={Pdf} target="_blank" rel="noreferrer">
+                here.
               </a>
-              .
             </p>
           </div>
-          <div class="icon-links">
+          <div className="icon-links">
             <p>
               <a href="mailto:johanamalv@gmail.com">
                 <GrMail />
               </a>
-              <a href="https://www.linkedin.com/in/johana-ma/" target="_blank">
+              <a
+                href="https://www.linkedin.com/in/johana-ma/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <GrLinkedin />
               </a>
             </p>

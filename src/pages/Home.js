@@ -10,7 +10,7 @@ import imageSP from "../images/sp-home.png";
 function ContactLink({ href, text }) {
   return (
     <li>
-      <a href={href} target="_blank">
+      <a href={href} target="_blank" rel="noreferrer">
         <span>{text}</span>
       </a>
     </li>
@@ -22,13 +22,13 @@ const projects = [
   {
     title: "Beautiful Website for Solar Panel Installation",
     image: imageSP,
-    alt: "",
+    alt: "website landing page with sky and solar panels",
     link: "/solarpanel",
   },
   {
     title: "Unique Website for 'Rad Hair Art'",
     image: imageRHA,
-    alt: "",
+    alt: "quote saying cool hair for cool people with an image of brown hair and image of mix of pastel hair colors",
     link: "/radhair",
   },
   {
@@ -40,7 +40,7 @@ const projects = [
   {
     title: "Milk Tea Expense & Sugar Consumption Manager",
     image: imageBT,
-    alt: "",
+    alt: "online store with one blue backpack, one mens khaki jacket and two men's shirts",
     link: "/boba",
   },
 ];
@@ -102,7 +102,7 @@ function Home() {
         {/* Project Card - Projects Info */}
         <section>
           {projects.map((project) => (
-            <ProjectCard {...project} />
+            <ProjectCard key={project.id} {...project} />
           ))}
         </section>
       </div>
