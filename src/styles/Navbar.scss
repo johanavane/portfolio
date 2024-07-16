@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@700&display=swap");
+
+.container {
+  padding: 1vmin 9vmin;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navHome {
+  a{
+    color: black;
+    font-size: 3vmin;
+    font-family: "Gayathri", sans-serif;
+    text-decoration: none;
+  }
+}
+
+.navMenu {
+  button{
+    color: black;
+    font-size: 3vmin;
+    font-family: "Gayathri", sans-serif;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+}
+
+.black-text a, button.black-text {
+  color: black;
+}
+
+.white-text a, button.white-text {
+  color: white;
+}
+

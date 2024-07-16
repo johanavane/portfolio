@@ -1,0 +1,91 @@
+.hamburger-menu {
+  display: none;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-links {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-layer {
+  position: relative;
+  overflow: hidden;
+  background-color: #42682f;
+}
+
+nav {
+  text-align: center;
+}
+
+.menu-links li {
+  list-style: none;
+  font-size: 10vmin;
+  height: 14vmin;
+  position: relative;
+  margin-right: 45px;
+}
+.menu-links sup{
+  font-size: 5.5vmin;
+}
+
+.menu-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Yeseva One", cursive;
+  overflow: hidden;
+}
+
+.menu-links span {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.menu-links span:before, .menu-links span:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: #42682f;
+}
+
+.menu-links span:before {
+  left: -2.5px;
+}
+.menu-links span:after {
+  right: 2.5px;
+  background:#fff;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu-links span:hover:before {
+  background: #fff;
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.menu-links span:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
+
+@media screen and (max-width: 40rem) {
+  .menu-links li {
+    font-size: 7.5vmin;
+  }
+  .menu-links sup{
+    font-size: 4.5vmin;
+  }
+}

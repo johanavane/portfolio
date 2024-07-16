@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Gayathri:wght@100;700&display=swap");
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 140vmin; /* Adjust max-width as needed */
+  margin: 0 auto; /* Center align the gallery */
+  padding: 10vmin 0 8vmin 0;
+}
+
+.about-box {
+  flex: 1; 
+}
+
+.flex-photo{
+  display: flex;
+  justify-content: center;
+  margin-right: 12vmin;
+  img{
+  width: 100%;
+  border-radius: 2vmin; 
+  }
+}
+
+.intro {
+
+  a {
+    color: black;
+  }
+  p {
+  font-size: 16px;
+  line-height: 29px;
+  color: black;
+  letter-spacing: 0.04em;
+  text-align: left;
+  font-family: "PPMori-Light";
+  font-weight: 400;
+  }
+  p:first-of-type{
+    font-family: "PPMori";
+  }
+}
+
+@media screen and (max-width: 57rem) {
+  .flexbox-container{
+    flex-direction: column;
+    width: 70vmin;
+  }
+  .flex-photo{
+    margin: 0 0 6vmin 0;
+  }
+  .intro p {
+    font-size: 16px;
+    line-height: 29px;
+  }
+}
+
+@media screen and (max-width: 45rem) {
+  .intro p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+}
+
+@media screen and (max-width: 40rem) {
+  .intro p {
+    font-size: 13px;
+    line-height: 21px;
+  }
+}
+
+@media screen and (max-width: 26rem) {
+  .intro p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}

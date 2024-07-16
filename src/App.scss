@@ -1,3 +1,22 @@
+// Fonts
+@import "https://fonts.googleapis.com/css2?family=Gayathri:wght@100;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Yeseva+One&display=swap";
+@import "media-queries";
+
+@font-face {
+  font-family: "PPMori";
+  src: url("./fonts/PPMori-Regular.otf") format('truetype');
+}
+@font-face {
+  font-family: "PPMori-Light";
+  src: url("./fonts/PPMori-Extralight.otf") format('truetype');
+}
+@font-face {
+  font-family: "PPMori-Bold";
+  src: url("./fonts/PPMori-SemiBold.otf") format('truetype');
+}
+
 .all-container{
     display: flex;
     flex-direction: column;
@@ -74,7 +93,7 @@
 }
 
 // MEDIA QUERIES --------------------------------------------------------
-@media screen and (min-width: 100rem) {
+@media screen and (min-width: 110rem) {
     .all-images{
         img{
             width: 1150px;

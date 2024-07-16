@@ -1,11 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 import "../styles/Home.scss";
-import imageCS from "../images/projectCS.png";
-import imageBT from "../images/projectBT.png";
-import imageRHA from "../images/rha-home.png";
-import imageSP from "../images/sp-home.png";
+import About from "./About";
+import Projects from "../components/Projects";
 
 function ContactLink({ href, text }) {
   return (
@@ -14,51 +11,6 @@ function ContactLink({ href, text }) {
         <span>{text}</span>
       </a>
     </li>
-  );
-}
-
-// Projects - array of objects
-const projects = [
-  {
-    title: "Beautiful Website for Solar Panel Installation",
-    image: imageSP,
-    alt: "website landing page with sky and solar panels",
-    link: "/solarpanel",
-  },
-  {
-    title: "Unique Website for 'Rad Hair Art'",
-    image: imageRHA,
-    alt: "quote saying cool hair for cool people with an image of brown hair and image of mix of pastel hair colors",
-    link: "/radhair",
-  },
-  {
-    title: "FakeStore API Clothing & Accessories Store",
-    image: imageCS,
-    alt: "",
-    link: "/store",
-  },
-  {
-    title: "Milk Tea Expense & Sugar Consumption Manager",
-    image: imageBT,
-    alt: "online store with one blue backpack, one mens khaki jacket and two men's shirts",
-    link: "/boba",
-  },
-];
-
-function ProjectCard({ title, image, alt, link }) {
-  return (
-    <div className="project">
-      <div className="project-img">
-        <img src={image} alt={alt} />
-      </div>
-      <div className="project-text">
-        <h3>{title}</h3>
-        <p>Web Design & Development</p>
-        <Link to={link}>
-          <span>VIEW PROJECT</span>
-        </Link>
-      </div>
-    </div>
   );
 }
 
@@ -95,17 +47,8 @@ function Home() {
           </section>
         </div>
       </section>
-      <div className="project-gallery">
-        <section>
-          <h2>Featured Work</h2>
-        </section>
-        {/* Project Card - Projects Info */}
-        <section>
-          {projects.map((project) => (
-            <ProjectCard key={project.id} {...project} />
-          ))}
-        </section>
-      </div>
+      <Projects />
+      <About />
     </>
   );
 }

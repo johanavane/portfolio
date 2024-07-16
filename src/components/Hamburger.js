@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
-import "../styles/Hamburger.css";
+import { HashLink } from "react-router-hash-link";
+import "../styles/Hamburger.scss";
 import gsap from "gsap";
 
 function Hamburger({ state }) {
@@ -58,7 +59,9 @@ function Hamburger({ state }) {
             <ul>
               <li>
                 <span>
-                  <Link to="/about">About</Link>
+                  <HashLink smooth to="/#about-me-section">
+                    About
+                  </HashLink>
                 </span>
               </li>
               <li>

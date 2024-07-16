@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { withRouter, Link } from "react-router-dom";
 import Hamburger from "./Hamburger";
-import "../styles/Navbar.css";
+import "../styles/Navbar.scss";
 
 function Navbar({ history }) {
   // State of our Menu
@@ -11,9 +11,6 @@ function Navbar({ history }) {
     menuName: "MENU",
     menuHome: "HOME",
   });
-
-  // State of our button
-  const [disabled, setDisabled] = useState(false);
 
   // useEffect for page changes
   useEffect(() => {
@@ -50,11 +47,16 @@ function Navbar({ history }) {
   return (
     <header>
       <div className="container">
-        <div className="logo">
+        <div
+          className={`navHome ${state.clicked ? "white-text" : "black-text"}`}
+        >
           <Link to="/">{state.menuHome}</Link>
         </div>
         <div className="navMenu">
-          <button disabled={disabled} onClick={handleMenu}>
+          <button
+            onClick={handleMenu}
+            className={state.clicked ? "white-text" : "black-text"}
+          >
             {state.menuName}
           </button>
         </div>

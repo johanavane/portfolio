@@ -1,65 +1,41 @@
 import React from "react";
-import "../styles/About.css";
-import * as FaIcons from "react-icons/fa";
-import { GrMail } from "react-icons/gr";
-import { GrLinkedin } from "react-icons/gr";
+import "../styles/About.scss";
 import Pdf from "../pdf/JohanaMartinez_Resume.pdf";
 
 class About extends React.Component {
   render() {
     return (
-      <div className="flexbox-container">
-        <div className="grid-photo">
-          <div className="portrait">
-            <img
-              src="selfphoto2.png"
-              alt="portrait of a woman weraing a black shirt on a baby blue background"
-            />
-          </div>
+      <div id="about-me-section" className="flexbox-container">
+        <div className="flex-photo about-box">
+          <img
+            src="self-portrait.png"
+            alt="portrait of a woman wearing a black button up leaning on a brown couch"
+          />
         </div>
-        <div className="grid-two">
-          <div className="location">
-            <p>
-              <FaIcons.FaMapMarkerAlt />
-              San Jose, CA
-            </p>
-          </div>
+        <div className="flex-about about-box">
           <div className="intro">
+            <p>ABOUT ME</p>
             <p>
-              Hello! Thank you for stopping by to learn more about me. I'm
-              Johana, a first generation college graduate from the University of
-              California, Santa Cruz. I obtained a B.S. in Computer Science and
-              I'm currently interested in job opportunities in front end
-              development.
+              Hi! I'm Johana, a first-generation college graduate from UC Santa
+              Cruz with a B.S. in Computer Science. I'm currently seeking
+              front-end development opportunities.
             </p>
             <p>
-              Outside of coding I enjoy running, watching comedy tv shows and
-              hiking. I've hiked many beautiful places including Zion National
-              Park, which is known for it's many challenging trails like Angel's
-              Landing. It was my favorite trail to hike by far, although the
-              trail was challenging and I had to wake up at 4 am to avoid big
-              crowds; the views were beautiful and definitely worth it!
+              I am skilled in: React.js | Next.js | JavaScript | Python | HTML |
+              CSS | SCSS
             </p>
             <p>
-              If you would like to connect with me about any work opportunities,
-              you can reach me at any of the links I have below and you can also
-              check out my resume{" "}
+              Outside of coding, I love hiking and have explored many beautiful
+              trails. One of my favorites Angel's Landing at Zion National Park.
+              Despite waking up at 4 am to avoid the big crowds, I enjoyed the
+              challenge of the trail and the amazing views!
+            </p>
+            <p>
+              If you'd like to connect about job opportunities or engage in tech
+              discussions, feel free to reach out. You can connect through the
+              links above and view my resume{" "}
               <a href={Pdf} target="_blank" rel="noreferrer">
                 here.
-              </a>
-            </p>
-          </div>
-          <div className="icon-links">
-            <p>
-              <a href="mailto:johanamalv@gmail.com">
-                <GrMail />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/johana-ma/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <GrLinkedin />
               </a>
             </p>
           </div>
