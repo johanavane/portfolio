@@ -24,9 +24,6 @@
   #0a3e3e, #0a3b1b);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  // top: 0;
-  // left: 0;
-  // right: 0;
   height: 85vmin;
   width: 92%;
   display: flex;
@@ -52,7 +49,6 @@
   }
   ul{
     list-style: none;
-    padding-left: 0;
     margin:0;
   }
   h2{
