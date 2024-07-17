@@ -24,33 +24,23 @@
   #0a3e3e, #0a3b1b);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
-  // top: 0;
-  // left: 0;
-  // right: 0;
   height: 85vmin;
   width: 92%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   border-radius: 5vmin;
-  will-change: transform;
-  section{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-  section:first-of-type{
-    border-radius: 5vmin;
-  }
+
   h1, h2, a{
     color: whitesmoke;
     text-decoration: none;
+    margin:0;
   }
   h1{
     font-size: 65px;
     line-height: 84.5px;
     font-family: 'PPMori';
+    padding: 0 4vmin;
   }
   h2, a{
     font-size: 24px;
@@ -59,15 +49,28 @@
   }
   ul{
     list-style: none;
-    padding-left: 0;
+    margin:0;
+  }
+  h2{
+    padding-right: 2vmin;
+  }
+  ul{
+    padding-left: 2vmin;
   }
 }
 
 .greeting {
-  padding: 0 4vmin;
+  display: inline-block;
   h1{
     text-align: center;
   }
+}
+
+.home-links{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
  
@@ -154,11 +157,11 @@
   .gradient-container {
     h1 {
       font-size: 40px;
-      line-height: 52px;
+      line-height: 48px;
     } 
     h2, a{
       font-size: 14px;
-      line-height: 18.2px;
+      line-height: 14.2px;
     }
   }
 }
