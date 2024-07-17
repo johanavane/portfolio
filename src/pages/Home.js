@@ -27,7 +27,7 @@ function Home() {
               <br />A front end developer.
             </h1>
           </section>
-          <section>
+          <section className="home-links">
             <h2>Let's connect:</h2>
             <ul className="links">
               <ContactLink
