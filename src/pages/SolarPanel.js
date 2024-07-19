@@ -20,13 +20,14 @@ function SolarPanel() {
     return null;
   }
   return (
-    <div className="all-container">
-      <h1>
+    <div className="projects-container">
+      {/* <h1>
         Solar Panel <br />
-        Installer
-      </h1>
-      <section className="all-overview">
-        <section className="all-tech-stack">
+        Installation
+      </h1> */}
+      <h1>Solar Panel Installation</h1>
+      <section className="projects-info">
+        <section className="projects-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -44,13 +45,13 @@ function SolarPanel() {
               </li>
             </ul>
           </section>
-          <section className="all-links">
+          <section className="projects-links">
             <a className="web-design" href="https://solartechexpert.com/">
               SolarTechExpert.com
             </a>
           </section>
         </section>
-        <section className="all-proj-overview">
+        <section className="projects-about">
           <h2>Key Achievements</h2>
           <ul>
             <li>
@@ -74,7 +75,7 @@ function SolarPanel() {
           </ul>
         </section>
       </section>
-      <section className="all-images all-slider">
+      <section className="projects-images projects-slider">
         {SolarImages.map((slide, index) => {
           return (
             <div
@@ -85,14 +86,14 @@ function SolarPanel() {
             </div>
           );
         })}
-        <section className="all-arrows">
-          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
+        <section className="projects-arrows">
+          <FaArrowLeft class="projects-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="projects-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="all-footer">
+      <section className="projects-footer">
         <Link to="/radhair">Next Project</Link>
-        <Link to="/radhair">RadHairArt</Link>
+        <Link to="/radhair">Rad Hair Art</Link>
       </section>
     </div>
   );

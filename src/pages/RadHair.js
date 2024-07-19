@@ -20,13 +20,14 @@ function RadHair() {
     return null;
   }
   return (
-    <div className="all-container">
-      <h1>
+    <div className="projects-container">
+      {/* <h1>
         Rad Hair <br />
         Art
-      </h1>
-      <section className="all-overview">
-        <section className="all-tech-stack">
+      </h1> */}
+      <h1>Rad Hair Art</h1>
+      <section className="projects-info">
+        <section className="projects-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -44,13 +45,13 @@ function RadHair() {
               </li>
             </ul>
           </section>
-          <section className="all-links">
+          <section className="projects-links">
             <a className="web-design" href="https://www.radhairart.com/">
               RadHairArt.com
             </a>
           </section>
         </section>
-        <section className="all-proj-overview">
+        <section className="projects-about">
           <h2>Key Achievements</h2>
           <ul>
             <li>
@@ -81,7 +82,7 @@ function RadHair() {
           </ul>
         </section>
       </section>
-      <section className="all-images all-slider">
+      <section className="projects-images projects-slider">
         {RadHairImages.map((slide, index) => {
           return (
             <div
@@ -92,14 +93,14 @@ function RadHair() {
             </div>
           );
         })}
-        <section className="all-arrows">
-          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
+        <section className="projects-arrows">
+          <FaArrowLeft class="projects-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="projects-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="all-footer">
+      <section className="projects-footer">
         <Link to="/store">Next Project</Link>
-        <Link to="/store">ClothingStore</Link>
+        <Link to="/store">Clothing Store</Link>
       </section>
     </div>
   );

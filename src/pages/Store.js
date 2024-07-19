@@ -20,13 +20,14 @@ function Store() {
     return null;
   }
   return (
-    <div className="all-container">
-      <h1>
+    <div className="projects-container">
+      {/* <h1>
         Clothing <br />
         Store
-      </h1>
-      <section className="all-overview">
-        <section className="all-tech-stack">
+      </h1> */}
+      <h1>Clothing Store</h1>
+      <section className="projects-info">
+        <section className="projects-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -45,7 +46,7 @@ function Store() {
             </ul>
           </section>
         </section>
-        <section className="all-proj-overview">
+        <section className="projects-about">
           <h2>Project Overview</h2>
           <p>
             Launched online store utilizing the FakeStore API for data
@@ -72,7 +73,7 @@ function Store() {
           </ul>
         </section>
       </section>
-      <section className="all-images all-slider">
+      <section className="projects-images projects-slider">
         {StoreImages.map((slide, index) => {
           return (
             <div
@@ -83,14 +84,14 @@ function Store() {
             </div>
           );
         })}
-        <section className="all-arrows">
-          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
+        <section className="projects-arrows">
+          <FaArrowLeft class="projects-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="projects-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="all-footer">
+      <section className="projects-footer">
         <Link to="/boba">Next Project</Link>
-        <Link to="/boba">BobaTracker</Link>
+        <Link to="/boba">Boba Tracker</Link>
       </section>
     </div>
   );

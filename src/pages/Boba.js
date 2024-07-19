@@ -21,13 +21,14 @@ function Boba() {
   }
 
   return (
-    <div className="all-container">
-      <h1>
+    <div className="projects-container">
+      {/* <h1>
         Boba <br />
         Tracker
-      </h1>
-      <section className="all-overview">
-        <section className="all-tech-stack">
+      </h1> */}
+      <h1>Boba Tracker</h1>
+      <section className="projects-info">
+        <section className="projects-tech-stack">
           <section>
             <h2>Tech Stack</h2>
             <ul>
@@ -46,7 +47,7 @@ function Boba() {
             </ul>
           </section>
         </section>
-        <section className="all-proj-overview">
+        <section className="projects-about">
           <h2>Project Overview</h2>
           <p>
             Boba Tracker is a web app enabling users to monitor their weekly
@@ -79,7 +80,7 @@ function Boba() {
           </ul>
         </section>
       </section>
-      <section className="all-images all-slider">
+      <section className="projects-images projects-slider">
         {slides.map((slide, index) => {
           return (
             <div
@@ -90,14 +91,14 @@ function Boba() {
             </div>
           );
         })}
-        <section className="all-arrows">
-          <FaArrowLeft class="all-left-arrow" onClick={prevSlide} />
-          <FaArrowRight class="all-right-arrow" onClick={nextSlide} />
+        <section className="projects-arrows">
+          <FaArrowLeft class="projects-left-arrow" onClick={prevSlide} />
+          <FaArrowRight class="projects-right-arrow" onClick={nextSlide} />
         </section>
       </section>
-      <section className="all-footer">
+      <section className="projects-footer">
         <Link to="/solarpanel">Next Project</Link>
-        <Link to="/solarpanel">SolarPanel</Link>
+        <Link to="/solarpanel">Solar Panel</Link>
       </section>
     </div>
   );
